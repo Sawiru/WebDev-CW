@@ -91,7 +91,6 @@ body {
     background-color: #eaeaea;
   }
   
-  /* Footer */
   footer {
     text-align: center;
     padding: 10px;
@@ -99,4 +98,30 @@ body {
     color: #fff;
     margin-top: 20px;
   }
-  
+  .footer-container {
+    display: flex;
+    justify-content: space-around; 
+    text-align: center;
+  }
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+  }
+
+.footer-section h3 {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+.footer-section a {
+    display: block;
+    text-decoration: none;
+    color: blue;
+    margin: 3px 0;
+  }
+
+.footer-section a:hover {
+    text-decoration: underline;
+  }
