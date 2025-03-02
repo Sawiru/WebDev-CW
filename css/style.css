@@ -6,14 +6,7 @@ body {
     background-color: #f5f5f5;
   }
   
-  .logo {
-    width: 150px; /* Adjust the width */
-    height: auto; /* Maintain aspect ratio */
-  }
 
-  #logo{
-    background-color: aqua;
-  }
   
 
   .wrapper {
@@ -29,7 +22,7 @@ body {
     background-color: #333;
     color: #fff;
   }
-  
+
   nav ul {
     list-style: none;
     display: flex;
@@ -80,26 +73,7 @@ body {
     transform: scale(1.05);
   }
   
-  /* Table Styles */
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
-  table th, table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-  }
-  
-  table tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-  
-  table tbody tr:hover {
-    background-color: #eaeaea;
-  }
+ 
   
   footer {
     text-align: center;
