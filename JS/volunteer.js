@@ -20,3 +20,28 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const feedbackTextarea = document.getElementById('feedback-textarea');
+    const submitBtn = document.getElementById('submit-btn');
+    const cancelBtn = document.getElementById('cancel-btn');
+    const submissionMessage = document.getElementById('submission-message');
+
+    // Handle Submit Button Click
+    submitBtn.addEventListener('click', function (e) {
+        e.preventDefault(); // Prevent form submission (if inside a form)
+        if (feedbackTextarea.value.trim() === '') {
+            alert('Please write something before submitting.'); // Optional: Validate input
+        } else {
+            submissionMessage.style.display = 'block'; // Show "Submitted!" message
+            feedbackTextarea.value = ''; // Clear the textarea
+        }
+    });
+
+    // Handle Cancel Button Click
+    cancelBtn.addEventListener('click', function (e) {
+        e.preventDefault(); // Prevent form submission (if inside a form)
+        feedbackTextarea.value = ''; // Clear the textarea
+        submissionMessage.style.display = 'none'; // Hide the "Submitted!" message
+    });
+});
