@@ -2,76 +2,100 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
-    padding: 20px;
-  }
-  .feedback-form {
-    max-width: 600px;
-    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make the form centered on full screen */
+}
+
+.feedback-form {
+    width: 100%; /* Adjust the width to make it more prominent */
+    max-width: 1000px; /* Ensure it doesn't get too wide on large screens */
     background: #fff;
-    padding: 20px;
+    padding: 40px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  .feedback-form h1 {
+}
+
+.feedback-form h1 {
     text-align: center;
     margin-bottom: 20px;
-  }
-  .feedback-form label {
+}
+
+.feedback-form label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-  }
-  .feedback-form input[type="text"],
-  .feedback-form input[type="email"],
-  .feedback-form textarea {
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
-  }
-  .feedback-form .radio-group,
-  .feedback-form .checkbox-group {
+    font-size: 1em;
+}
+
+.feedback-form .radio-group,
+.feedback-form .checkbox-group {
     margin-bottom: 20px;
-  }
-  .feedback-form .radio-group label,
-  .feedback-form .checkbox-group label {
-    font-weight: normal;
-    margin-right: 15px;
-  }
-  .feedback-form .rating {
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.feedback-form .rating {
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 20px;
-  }
-  .feedback-form .rating input[type="radio"] {
+    align-items: center;
+}
+
+.feedback-form .rating input[type="radio"] {
     margin-right: 5px;
-  }
-  .feedback-form .rating label {
+}
+
+.feedback-form .rating label {
     font-size: 1em;
     cursor: pointer;
+}
 
-  }
-  .feedback-form button {
+.feedback-form button {
     background-color: #007bff;
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  .feedback-form button:hover {
-    background-color: #0056b3;
-  }
-  .required {
-    color: red;
-  }
+    font-size: 1em;
+    width: 100%;
+}
 
-  
-  .rating-scale {
+.feedback-form button:hover {
+    background-color: #0056b3;
+}
+
+.required {
+    color: red;
+}
+
+.rating-scale {
     display: flex;
     justify-content: space-between;
     margin-top: 5px;
     font-size: 0.9em;
     color: #666;
-  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .feedback-form {
+        width: 95%; /* More width on smaller screens */
+        padding: 20px;
+    }
+}
