@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="css/feedback.css">
+  <style>
+
+    
+  </style>
+</head>
+<body>
+  <div class="feedback-form">
+    <h1>Feedback Form</h1>
+    <form id="feedbackForm">
+      <!-- Full Name -->
+      <label for="fullName">Enter your name: <span class="required">*</span></label>
+      <input type="text" id="fullName" name="fullName" placeholder="Enter name here" required>
+
+      <!-- Email -->
+      <label for="email">Enter your email: <span class="required">*</span></label>
+      <input type="email" id="email" name="email" placeholder="Enter email here" required>
+
+      <!-- First Time Visiting -->
+      <label>Was this your first time visiting? <span class="required">*</span></label>
+      <div class="radio-group">
+        <label><input type="radio" name="firstTime" value="Yes" required> Yes</label>
+        <label><input type="radio" name="firstTime" value="No"> No</label>
+      </div>
+
+      <!-- Informative and Easy to Navigate -->
+      <label>Was this website informative and easy to navigate through? <span class="required">*</span></label>
+      <div class="radio-group">
+        <label><input type="radio" name="informative" value="Yes" required> Yes</label>
+        <label><input type="radio" name="informative" value="No"> No</label>
+      </div>
+
+      <!-- Suggestions for Improvement -->
+      <label for="improvements">If "No", suggest any improvements for the future:</label>
+      <textarea id="improvements" name="improvements" rows="4" placeholder="Add your message here..."></textarea>
+
+      <!-- Rating (1 to 10) -->
+      <label>How satisfied are you with our services? <span class="required">*</span></label>
+      <div class="rating">
+        <input type="radio" id="rating1" name="rating" value="1" required>
+        <label for="rating1">1</label>
+        <input type="radio" id="rating2" name="rating" value="2">
+        <label for="rating2">2</label>
+        <input type="radio" id="rating3" name="rating" value="3">
+        <label for="rating3">3</label>
+        <input type="radio" id="rating4" name="rating" value="4">
+        <label for="rating4">4</label>
+        <input type="radio" id="rating5" name="rating" value="5">
+        <label for="rating5">5</label>
+        <input type="radio" id="rating6" name="rating" value="6">
+        <label for="rating6">6</label>
+        <input type="radio" id="rating7" name="rating" value="7">
+        <label for="rating7">7</label>
+        <input type="radio" id="rating8" name="rating" value="8">
+        <label for="rating8">8</label>
+        <input type="radio" id="rating9" name="rating" value="9">
+        <label for="rating9">9</label>
+        <input type="radio" id="rating10" name="rating" value="10">
+        <label for="rating10">10</label>
+      </div>
+      <div class="rating-scale">
+      </div>
+
+      <!-- Recommend Services -->
+      <label>Would you recommend our services? <span class="required">*</span></label>
+      <div class="radio-group">
+        <label><input type="radio" name="recommend" value="Yes" required> Yes</label>
+        <label><input type="radio" name="recommend" value="No"> No</label>
+      </div>
+
+      <!-- Receive Updates -->
+      <label>Would you like to receive updates about the website and any offers? <span class="required">*</span></label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="updates" value="Email"> Yes - via Email</label>
+      </div>
+
+      <!-- Additional Questions or Requests -->
+      <label for="additional">Do you have any additional questions or requests?</label>
+      <textarea id="additional" name="additional" rows="4" placeholder="Add your message here..."></textarea>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    // JavaScript for form validation
+    const form = document.getElementById('feedbackForm');
+    form.addEventListener('submit', (event) => {
+      let valid = true;
+
+      // Check if all required fields are filled
+      const requiredFields = form.querySelectorAll('[required]');
+      requiredFields.forEach(field => {
+        if (!field.value.trim()) {
+          valid = false;
+          field.style.borderColor = 'red';
+        } else {
+          field.style.borderColor = '#ccc';
+        }
+      });
+
+      if (!valid) {
+        event.preventDefault(); // Prevent form submission if validation fails
+        alert('Please fill out all required fields.');
+      }
+    });
+  </script>
+</body>
+</html>
