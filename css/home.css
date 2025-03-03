@@ -30,9 +30,5 @@
     transform: scale(1.05);
   }
 
-  .logo {
-    width: 60px;
-    height: auto;
-    transition: transform 0.3s ease-in-out;
-}
+
   
