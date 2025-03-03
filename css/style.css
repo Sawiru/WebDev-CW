@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #ffffff;
+    
   }
 
   .wrapper {
@@ -12,6 +13,7 @@ body {
     padding: 20px;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(94, 16, 183, 0.1);
+    
   }
   
   /* Header & Navigation */
