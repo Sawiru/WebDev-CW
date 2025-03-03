@@ -28,12 +28,12 @@ body {
 
 .card {
     flex: 0 0 auto;
-    width: 250px;
-    margin-right: 15px;
-    padding: 15px;
+    width: 300px;
+    margin-right: 20px;
+    padding: 20px;
     background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
 }
 
