@@ -12,11 +12,10 @@ body {
 
 /* Feedback Form Styling */
 .feedback-form {
-    width: 80%; /* More flexible width */
-    max-width: 100%; /* Prevents excessive stretching */
-    background: #fff;
+    width: 60%; /* More flexible width */
+    background: #ffffff;
     padding: 30px;
-    border-radius: 10px;
+
     
 }
 
