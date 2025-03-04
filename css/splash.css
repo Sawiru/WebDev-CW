@@ -1,7 +1,7 @@
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #FDF3E7;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #C1D8C3;
     color: #333333;
     text-align: center;
     display: flex;
@@ -14,7 +14,8 @@ body {
 .content-wrapper {
     max-width: 800px;
     padding: 20px;
-    background: white;
+    background: #FFF5E4;
+    border: 3px solid #E68900;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -27,13 +28,13 @@ body {
 
 
 h1 {
-    color: #E67E22;
+    color: #E68900;
     font-size: 36px;
     font-weight: 700;
 }
 
 h2 {
-    color: #27AE60;
+    color: #E68900;
     font-size: 24px;
     font-weight: 600;
     margin-top: 15px;
@@ -64,4 +65,4 @@ p {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-    
+
