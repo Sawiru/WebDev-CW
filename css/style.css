@@ -1,9 +1,9 @@
 /* Base styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: white;
     
   }
 
@@ -11,24 +11,23 @@ body {
     max-width: auto;
     margin: 0 auto;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #FFF5E4 ;
     box-shadow: 0 0 10px rgba(94, 16, 183, 0.1);
     
   }
   
-  /* Header & Navigation */
   header {
     display: flex;
-    align-items: center; /* Align items vertically */
-    justify-content: space-between; /* Space out elements */
-    background-color: #333; /* Background color */
+    align-items: center; 
+    justify-content: space-between;
+    background-color: #6A9C89 ; 
     padding: 10px 20px;
-    color: white;
+    color: black ;
   }
 
   .logo-title {
     display: flex;
-    align-items: center; /* Align logo and title in one line */
+    align-items: center; 
     gap: 10px;
   }
 
@@ -44,17 +43,18 @@ body {
     justify-content: space-around;
     padding: 10px;
     margin: 0;
+    font-weight: bold;
   }
   
   nav ul li a {
-    color: #fff;
+    color: black;
     text-decoration: none;
     padding: 5px 10px;
   }
   
   nav ul li a:hover,
   nav ul li a.active {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid black;
   }
   
   main {
@@ -65,8 +65,8 @@ body {
   footer {
     text-align: center;
     padding: 10px;
-    background-color: #333;
-    color: #fff;
+    background-color: #6A9C89;
+    color: black;
     margin-top: 20px;
   }
   .footer-container {
@@ -89,7 +89,7 @@ body {
   .footer-section a {
     display: block;
     text-decoration: none;
-    color: white;
+    color: black;
     margin: 3px 0;
   }
 
