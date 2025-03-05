@@ -30,5 +30,27 @@ p{
     transform: scale(1.05);
   }
 
+  .btn-get-involved {
+    display: block;
+    width: 200px;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #6A9C89; /* Green color */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 20px auto; /* Center the button */
+}
+
+.btn-get-involved:hover {
+    background-color: #FFA725 ;
+    transform: scale(1.05);
+}
+
+
 
   
