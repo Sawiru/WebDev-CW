@@ -1,0 +1,56 @@
+
+
+p{
+    font-weight: bold;
+  }
+
+  /* Hero Section */
+  .para {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  /* Content Tiles */
+  .content-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .content-tiles .tile {
+    flex: 1 1 calc(25% - 20px);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .content-tiles .tile:hover {
+    transform: scale(1.05);
+  }
+
+  .btn-get-involved {
+    display: block;
+    width: 200px;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #6A9C89; /* Green color */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 20px auto; /* Center the button */
+}
+
+.btn-get-involved:hover {
+    background-color: #FFA725 ;
+    transform: scale(1.05);
+}
+
+
+
+  

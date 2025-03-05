@@ -3,42 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Table - Your Website Title</title>
+  <title>Zero Hunger Group 10 - table</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/table.css">
+  <script src="JS/home.js"></script>
 </head>
 <body>
   <div class="wrapper">
     <header>
-      <!-- Navigation as in the template above -->
-    </header>
+      <div class="logo-title">
+          <img class="logo" src="images/home/zerohunger_logo.webp" alt="logo">
+          <h1 class="title">Zero Hunger</h1>
+      </div>
+      <button class="hamburger">☰</button>
+      <nav>
+          <ul>
+          <li><a href="splash.html">Splash</a></li>
+          <li><a href="home.html" class="active">Home</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="table.html">Table</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="team.html">Team</a></li>
+          </ul>
+      </nav>
+  </header>
+
 
     <main>
       <section class="table-section">
-        <h1>Table Page</h1>
+        <h1>Global Impact of Climate Change on Food Security</h1>
+        <h3>(Aligned with SDG 2: Zero Hunger & SDG 13: Climate Action)</h3><br>
+        <p>This table displays the impact of climate change on food production in various countries:</p>
+          <ul >
+            <li>Name (With a flag icon)</li>
+            <li>Main Crop Affected</li>
+            <li>Impact on Production as a percentage</li>
+            <li>Severity Level</li>
+            <li>Websites where u can find more detials on</li>
+          </ul>
         <table>
-          <thead>
             <tr>
-              <th>Header 1 <img src="images/icon1.png" alt="Icon 1" title="Description"></th>
-              <th>Header 2</th>
-              <th>Header 3</th>
-              <th>Header 4</th>
+              <th>Country &#x1F30D;</th>  
+              <th>Main Crop &#x1F331;</th>  
+              <th>Impact on Production &#x1F4C9;</th> 
+              <th>Severity &#x1F6A8;</th>
+              <th>More Details</th>
             </tr>
-          </thead>
-          <tbody>
             <tr>
-              <td>Row 1, Cell 1</td>
-              <td>Row 1, Cell 2</td>
-              <td>Row 1, Cell 3</td>
-              <td>Row 1, Cell 4</td>
+              <td>India &#x1F1EE;&#x1F1F3;</td>
+              <td>Rice &#x1F35A;</td>
+              <td>-12%</td>
+              <td>Severe &#x1F525;</td>
+              <td rowspan="5"><a href="https://sdgs.un.org/goals" target="_blank">Read more</a></td>
+            </tr>
+            <tr>
+              <td>USA &#x1F1FA;&#x1F1F8;</td>
+              <td>Corn &#x1F33D;</td> 
+              <td>-8%</td>
+              <td>Moderate &#x26A0;&#xFE0F;</td>
+              </tr>
+            <tr>
+              <td>Brazil &#x1F1E7;&#x1F1F7;</td>
+              <td>Coffee &#x2615;</td>
+              <td>-15%</td>
+              <td>Critical &#x1F6A8;</td> 
+            </tr>
+            <tr>
+              <td>Nigeria &#x1F1F3;&#x1F1EC;</td> 
+              <td>Cassava &#x1F954;</td> 
+              <td>-5%</td>
+              <td>Moderate &#x26A0;&#xFE0F;</td> 
+            </tr>
+            <tr>
+              <td>China &#x1F1E8;&#x1F1F3; </td> 
+              <td>Wheat &#x1F33E;</td> 
+              <td>-10%</td>
+              <td>Severe &#x1F525;</td>
             </tr>
             <!-- Include at least 8 rows and implement alternating row colours, hover effects, etc. -->
-          </tbody>
         </table>
       </section>
     </main>
 
     <footer>
-      <p>&copy; 2025 Your Team Name. <a href="pageEditor_ST2.html">Page Editor</a></p>
+        <p>&copy; 2025 Your Team Name.</p>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Content Pages</h3>
+                <a href="pageEditor_ST1.html">Student 1 Page Editor</a>
+                <a href="pageEditor_ST2.html">Student 2 Page Editor</a>
+                <a href="pageEditor_ST3.html">Student 3 Page Editor</a>
+                <a href="pageEditor_ST4.html">Student 4 Page Editor</a>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Validation Pages</h3>
+                <a href="validation_ST1.html">Student 1 Page Validation</a>
+                <a href="validation_ST2.html">Student 2 Page Validation</a>
+                <a href="validation_ST3.html">Student 3 Page Validation</a>
+                <a href="validation_ST4.html">Student 4 Page Validation</a>
+            </div>
+            </div>
     </footer>
   </div>
 </body>

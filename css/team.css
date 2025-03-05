@@ -1,0 +1,104 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+
+.team-container {
+    background: #FFF5E4 ;
+    color: white;
+    padding: 40px;
+}
+.team-text{
+    color:black
+}
+
+.team-container h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.team-container p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.member {
+    width: 200px;
+    text-align: center;
+    background: #C1D8C3;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding: 10px;
+}
+
+.member:hover {
+    transform: scale(1.1);
+}
+
+.member img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.info {
+    background: #8bca91;
+    color: black;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+
+.member:hover .info {
+    opacity: 1;
+}
+
+.info h3 {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.info p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info ul li {
+    font-size: 12px;
+}
+
+
+@media (max-width: 768px) {
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member {
+        width: 80%;
+    }
+}
