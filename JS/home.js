@@ -1,5 +1,10 @@
-document.querySelector(".hamburger").addEventListener("click", function() {
-    document.querySelector("nav ul").classList.toggle("show");
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector("nav ul");
+
+    hamburger.addEventListener("click", function () {
+        navMenu.classList.toggle("show");
+    });
 });
 
 function redirectToVolunteer() {
