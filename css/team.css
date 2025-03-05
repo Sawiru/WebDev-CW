@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,11 +7,14 @@ body {
     text-align: center;
 }
 
-/* Team Section */
+
 .team-container {
-    background: #a0a0a0;
+    background: #FFF5E4 ;
     color: white;
     padding: 40px;
+}
+.team-text{
+    color:black
 }
 
 .team-container h2 {
@@ -24,7 +27,7 @@ body {
     margin-bottom: 30px;
 }
 
-/* Team Members */
+
 .team-members {
     display: flex;
     justify-content: center;
@@ -35,7 +38,7 @@ body {
 .member {
     width: 200px;
     text-align: center;
-    background: white;
+    background: #C1D8C3;
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease;
@@ -52,19 +55,18 @@ body {
     display: block;
 }
 
-/* Hover Effect - Show Text Below Image */
 .info {
-    background: white;
+    background: #8bca91;
     color: black;
     padding: 10px;
-    margin-top: 10px; /* Ensures text is below the image */
+    margin-top: 10px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    opacity: 0; /* Initially hidden */
+    opacity: 0; 
     transition: opacity 0.3s ease;
 }
 
-/* Show text when hovering over the member */
+
 .member:hover .info {
     opacity: 1;
 }
@@ -89,7 +91,7 @@ body {
     font-size: 12px;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .team-members {
         flex-direction: column;
