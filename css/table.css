@@ -1,20 +1,43 @@
+ h1{
+  color: #FFA725;
+  text-align: center;
+ }
+ 
+ h3{
+  text-align: center;
+ }
+
  /* Table Styles */
  table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    border: 20px solid #C1D8C3;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px; 
   }
   
   table th, table td {
-    border: 1px solid #ddd;
+    border: 3px solid #C1D8C3;
     padding: 10px;
     text-align: left;
+  }
+
+  table{
+   
   }
   
   table tr:nth-child(even) {
     background-color: #f9f9f9;
   }
+
+  th:hover{
+    background-color: #cc7d06;
+  }
   
   table tr:hover {
-    background-color: #eaeaea;
+    background-color: #FFA725;
   }
+
+
