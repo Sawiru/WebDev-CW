@@ -3,15 +3,22 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: #FFF5E4 ;
     text-align: center;
+}
+
+.team-rectangle {
+    border-radius: 10px;
+    margin: 50px auto;
+    max-width: 1200px;
 }
 
 
 .team-container {
-    background: #FFF5E4 ;
+    background: #6A9C89 ;
     color: white;
     padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .team-text{
     color:black
@@ -65,6 +72,7 @@ body {
     opacity: 0; 
     transition: opacity 0.3s ease;
 }
+
 
 
 .member:hover .info {

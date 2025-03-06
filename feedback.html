@@ -5,12 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Feedback Form</title>
   <link rel="stylesheet" href="css/feedback.css">
+  <link rel="stylesheet" href="css/home.css">
+  <script src="JS/home.js">
+    
+  </script>
   <style>
 
     
   </style>
 </head>
 <body>
+
+  <header>
+    <div class="logo-title">
+        <img class="logo" src="images/home/zerohunger_logo.webp" alt="logo">
+        <h1 class="title">Zero Hunger</h1>
+    </div>
+    <button class="hamburger">☰</button>
+    <nav>
+        <ul>
+        <li><a href="splash.html">Splash</a></li>
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="table.html">Table</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+        <li><a href="team.html">Team</a></li>
+        </ul>
+    </nav>
+</header>
+
   <div class="feedback-form">
     <h1>Feedback Form</h1>
     <form id="feedbackForm">
@@ -74,11 +99,11 @@
         <label><input type="radio" name="recommend" value="No"> No</label>
       </div>
 
-      <!-- Receive Updates -->
-      <label>Would you like to receive updates about the website and any offers? <span class="required">*</span></label>
-      <div class="checkbox-group">
-        <label><input type="checkbox" name="updates" value="Email"> Yes - via Email</label>
-      </div>
+      <label for="updates">Would you like to receive updates about the website and any offers?</label>
+        <select id="updates" name="updates">
+        <option value="no">No</option>
+        <option value="yes">Yes - Email</option>
+      </select>
 
       <!-- Additional Questions or Requests -->
       <label for="additional">Do you have any additional questions or requests?</label>
@@ -90,12 +115,12 @@
   </div>
 
   <script>
-    // JavaScript for form validation
+  
     const form = document.getElementById('feedbackForm');
     form.addEventListener('submit', (event) => {
       let valid = true;
 
-      // Check if all required fields are filled
+ 
       const requiredFields = form.querySelectorAll('[required]');
       requiredFields.forEach(field => {
         if (!field.value.trim()) {
@@ -107,7 +132,7 @@
       });
 
       if (!valid) {
-        event.preventDefault(); // Prevent form submission if validation fails
+        event.preventDefault(); 
         alert('Please fill out all required fields.');
       }
     });
