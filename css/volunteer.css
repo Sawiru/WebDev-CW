@@ -5,17 +5,17 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 70%;
     margin: auto;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
-    background: #C1D8C3;
-    border-radius: 8px;
+    background: #f6dfb7;
+    border-radius: 15px;
 }
  
 .section {
     margin-bottom: 40px;
-    background: #6A9C89;
+    background: #8E7C6C;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -30,12 +30,13 @@ body {
 
 .card {
     flex: 0 0 auto;
-    width: 300px;
+    width: 400px;
+    height: 450px;
     margin-right: 20px;
     padding: 5px;
     background: #FFF5E4;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.7);
     text-align: center;
 }
 
@@ -75,6 +76,7 @@ body {
 }
 
 .review-card {
+    
     background: #fff;
     width: 25%;
     padding: 10px;
@@ -82,11 +84,12 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     display: inline-block;
+    
 }
 
 .feedback-form textarea {
     width: 50%;
-    height: 100px;
+    height: 150px;
     padding: 10px;
     margin: auto;
     text-align: center;
