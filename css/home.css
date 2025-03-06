@@ -1,9 +1,24 @@
 
+#opening{
+  background-color: white;
+  
+}
+
+#opening_image{
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+#opening_text{
+  font-size: 90px;
+}
 
 #vid{
   margin-top: 40px;
   text-align: center;
 }
+
 p{
     font-weight: bold;
   }
