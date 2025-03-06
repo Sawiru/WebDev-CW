@@ -1,7 +1,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #C1D8C3;
+    background-color: #8E7C6C;
     color: #333333;
     text-align: center;
     display: flex;
@@ -11,30 +11,31 @@ body {
     margin: 0;
 }
 
+
 .content-wrapper {
     max-width: 800px;
-    padding: 20px;
+    padding: 50px;
     background: #FFF5E4;
-    border: 3px solid #E68900;
+    border: 3px solid #ff9800;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 245, 228, 0.9); 
 }
 
 .splash-img {
-    width: 120px;
+    width: 150px;
     height: auto;
     margin-bottom: 10px;
 }
 
 
 h1 {
-    color: #E68900;
+    color: #ff9800;
     font-size: 36px;
     font-weight: 700;
 }
 
 h2 {
-    color: #E68900;
+    color: #ff9800;
     font-size: 24px;
     font-weight: 600;
     margin-top: 15px;
