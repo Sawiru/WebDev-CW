@@ -3,7 +3,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: white;
+  background-color: #FFF5E4 ;
 }
 
 /* Navbar Container */
@@ -45,8 +45,8 @@ nav ul {
   font-weight: bold;
 }
 
-.nav-bar a.active {
-  color: #d67214; /* Orange color for active tab */
+.nav-bar a .active {
+  color: #FFA725; 
 }
 
 nav ul li {
