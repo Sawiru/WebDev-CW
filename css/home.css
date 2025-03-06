@@ -1,5 +1,9 @@
 
 
+#vid{
+  margin-top: 40px;
+  text-align: center;
+}
 p{
     font-weight: bold;
   }
@@ -7,7 +11,12 @@ p{
   /* Hero Section */
   .para {
     text-align: center;
+    margin-top: 40px;
     margin-bottom: 40px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+
   }
   
   /* Content Tiles */
