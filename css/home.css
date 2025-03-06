@@ -8,9 +8,9 @@
 
 /* Style for text section */
 #opening_text {
-  font-size: 90px; /* Adjust size */
+  font-size: 90px; 
   font-weight: bold;
-  max-width: 40%; /* Limits text width */
+  max-width: 40%;
 }
 
 /* Style for image */
