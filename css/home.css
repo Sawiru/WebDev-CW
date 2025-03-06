@@ -1,18 +1,27 @@
-
-#opening{
+#opening {
+  display: flex;
+  align-items: center; /* Align text and image vertically */
+  justify-content: space-between; /* Ensures space between text and image */
   background-color: white;
-  
+  padding: 20px; /* Add some spacing */
 }
 
-#opening_image{
-  max-width: 100%;
+/* Style for text section */
+#opening_text {
+  font-size: 90px; /* Adjust size */
+  font-weight: bold;
+  max-width: 40%; /* Limits text width */
+}
+
+/* Style for image */
+#opening_image {
+  width: 65%; /* Take up more space */
+  max-width: 800px; /* Prevent it from being too large on big screens */
   height: auto;
   border-radius: 20px;
+  margin-left: auto;
 }
 
-#opening_text{
-  font-size: 90px;
-}
 
 #vid{
   margin-top: 40px;
@@ -37,7 +46,7 @@ p{
   /* Content Tiles */
   .content-tiles {
     display: flex;
-    flex-wrap: wrap;
+    height: 400px;
     gap: 5px;
     
   }
