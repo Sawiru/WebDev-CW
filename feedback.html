@@ -6,35 +6,31 @@
   <title>Feedback Form</title>
   <link rel="stylesheet" href="css/feedback.css">
   <link rel="stylesheet" href="css/style.css">
- 
-  <style>
-
-    
-  </style>
 </head>
-<script src="JS/home.js"></script>
 <body>
 
   <header>
     <section>
-    <div class="logo-title">
+      <div class="logo-title">
         <img class="logo" src="images/home/zerohunger_logo.webp" alt="logo">
         <h1 class="title">Zero Hunger</h1>
-    </div>
-    <button class="hamburger">☰</button>
-    <nav>
+      </div>
+      <button class="hamburger">☰</button>
+      <nav>
         <ul>
-        <li><a href="splash.html">Splash</a></li>
-        <li><a href="home.html" class="active">Home</a></li>
-        <li><a href="volunteer.html">Volunteer</a></li>
-        <li><a href="table.html">Table</a></li>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="feedback.html">Feedback</a></li>
-        <li><a href="sitemap.html">Sitemap</a></li>
-        <li><a href="team.html">Team</a></li>
+          <li><a href="splash.html">Splash</a></li>
+          <li><a href="home.html" class="active">Home</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="table.html">Table</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="team.html">Team</a></li>
         </ul>
-    </nav>
+      </nav>
+    </section>
   </header>
+
   <main>
     <div class="feedback-form">
       <h1>Feedback Form</h1>
@@ -54,16 +50,16 @@
           <label><input type="radio" name="firstTime" value="No"> No</label>
         </div>
 
-        <!-- Informative and Easy to Navigate -->
-        <label>Was this website informative and easy to navigate through? <span class="required">*</span></label>
+        <!-- Website Experience -->
+        <label>Was this website informative and easy to navigate? <span class="required">*</span></label>
         <div class="radio-group">
           <label><input type="radio" name="informative" value="Yes" required> Yes</label>
           <label><input type="radio" name="informative" value="No"> No</label>
         </div>
 
-        <!-- Suggestions for Improvement -->
-        <label for="improvements">If "No", suggest any improvements for the future:</label>
-        <textarea id="improvements" name="improvements" rows="4" placeholder="Add your message here..."></textarea>
+        <!-- Suggestions -->
+        <label for="improvements">If "No", suggest any improvements:</label>
+        <textarea id="improvements" name="improvements" rows="4" placeholder="Your suggestions..."></textarea>
 
         <!-- Rating (1 to 10) -->
         <label>How satisfied are you with our services? <span class="required">*</span></label>
@@ -89,8 +85,6 @@
           <input type="radio" id="rating10" name="rating" value="10">
           <label for="rating10">10</label>
         </div>
-        <div class="rating-scale">
-        </div>
 
         <!-- Recommend Services -->
         <label>Would you recommend our services? <span class="required">*</span></label>
@@ -99,44 +93,68 @@
           <label><input type="radio" name="recommend" value="No"> No</label>
         </div>
 
-        <label for="updates">Would you like to receive updates about the website and any offers?</label>
-          <select id="updates" name="updates">
+        <!-- Email Updates -->
+        <label for="updates">Would you like to receive updates?</label>
+        <select id="updates" name="updates">
           <option value="no">No</option>
           <option value="yes">Yes - Email</option>
         </select>
 
-        <!-- Additional Questions or Requests -->
-        <label for="additional">Do you have any additional questions or requests?</label>
-        <textarea id="additional" name="additional" rows="4" placeholder="Add your message here..."></textarea>
+        <!-- Additional Questions -->
+        <label for="additional">Do you have any additional questions?</label>
+        <textarea id="additional" name="additional" rows="4" placeholder="Your message..."></textarea>
 
         <!-- Submit Button -->
         <button type="submit">Submit</button>
       </form>
     </div>
+  </main>
 
-    <script>
-    
-      const form = document.getElementById('feedbackForm');
-      form.addEventListener('submit', (event) => {
-        let valid = true;
+  <footer>
+    <p>&copy; Zero Hunger Group 10.</p>
+    <div class="footer-sections">
+        <div>
+            <h3>Content Pages</h3>
+            <p>Student 1 Page Editor</p>
+            <p>Student 2 Page Editor</p>
+            <p>Student 3 Page Editor</p>
+            <p>Student 4 Page Editor</p>
+        </div>
+        <div>
+            <h3>Validation Pages</h3>
+            <p>Student 1 Page Validation</p>
+            <p>Student 2 Page Validation</p>
+            <p>Student 3 Page Validation</p>
+            <p>Student 4 Page Validation</p>
+        </div>
+    </div>
+</footer>
 
-  
-        const requiredFields = form.querySelectorAll('[required]');
-        requiredFields.forEach(field => {
-          if (!field.value.trim()) {
-            valid = false;
-            field.style.borderColor = 'red';
-          } else {
-            field.style.borderColor = '#ccc';
-          }
-        });
+  <!-- JavaScript -->
+  <script>
+    document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent default submission
 
-        if (!valid) {
-          event.preventDefault(); 
-          alert('Please fill out all required fields.');
+      let valid = true;
+      const requiredFields = document.querySelectorAll('[required]');
+      requiredFields.forEach(field => {
+        if (!field.value.trim()) {
+          valid = false;
+          field.style.borderColor = 'red';
+        } else {
+          field.style.borderColor = '#ccc';
         }
       });
-    </script>
-  </main>
+
+      if (!valid) {
+        alert('Please fill out all required fields.');
+        return;
+      }
+
+      alert("Thank you for your feedback!");
+      window.location.href = "thankyou.html"; // Redirects after submission
+    });
+  </script>
+
 </body>
 </html>

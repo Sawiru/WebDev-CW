@@ -1,23 +1,39 @@
-
-
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #C1D8C3  ;
+    background-color: #C1D8C3;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    flex-direction: column; /* Ensures header, main, and footer are stacked */
+    min-height: 100vh; /* Makes body take up full viewport height */
 }
 
+/* Header Styling */
+header {
+    width: 100%;
+    background: #6A9C89; /* Consistent theme color */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* Main Content */
+main {
+    flex: 1; /* Allows main section to expand */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Feedback Form Styling */
 .feedback-form {
-    width: 60%; 
+    width: 60%;
     background: #FFF5E4;
     padding: 30px;
     box-shadow: 0 0 10px #3f3f3f;
-
-    
+    border-radius: 10px;
 }
 
 .feedback-form h1 {
@@ -106,9 +122,19 @@ body {
     color: #666;
 }
 
+/* Footer Styling */
+footer {
+    width: 100%;
+    background: #6A9C89;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     .feedback-form {
-        width: 95%; 
+        width: 95%; /* Adjust form width for smaller screens */
         padding: 20px;
     }
 }
