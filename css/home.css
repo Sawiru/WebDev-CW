@@ -17,7 +17,7 @@
 /* Style for image */
 #opening_image {
   width: 65%; /* Take up more space */
-  max-width: 800px; /* Prevent it from being too large on big screens */
+  max-width: 900px; /* Prevent it from being too large on big screens */
   height: auto;
   border-radius: 20px;
   margin-left: auto;
