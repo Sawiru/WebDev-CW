@@ -1,34 +1,50 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #C1D8C3;
-    margin: 0;
+    margin: 10;
+    width: 100%;
     padding: 0;
     display: flex;
-    flex-direction: column; /* Ensures header, main, and footer are stacked */
-    min-height: 100vh; /* Makes body take up full viewport height */
-}
+    flex-direction: column; 
+    min-height: 100vh; 
 header {
     width: 100%;
-    background: #999c60; /* Consistent theme color */
+    background: #999c60; 
     color: white;
     padding: 15px 0;
     text-align: center;
 }
-
-.card{
-    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+.card {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #FFF5E4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
-.card-body {position: relative;
+/* Card body styling */
+.card-body {
     display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: rgb(rgb(181, 132, 60));
-    background-clip: border-box;
-    border: 0 solid rgba(0,0,0,.125);
-    border-radius: .25rem;
-    }
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #FFF5E4;
+    border-radius: 8px;
+}
+section{
+    position: relative;
+    
+}
+h2{
+    text-align: center;
+    font-size: xx-large;
+    text-decoration-color: black;
+    text-decoration-line: initial;
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+}
 svg {
     width: 100%;
     height: auto;

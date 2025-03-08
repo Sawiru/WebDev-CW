@@ -1,201 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>user profile</title>
-    <link rel="stylesheet" href="css/profile.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Sitemap</title>
+    <link rel="stylesheet" href="css/sitemap.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+<script src="JS/home.js"></script>
+
 <body>
-  <header>
-    <section>
-      <div class="logo-title">
-        <img class="logo" src="images/home/zerohunger_logo.webp" alt="logo">
-        <h1 class="title">Zero Hunger</h1>
-      </div>
-      <button class="hamburger">☰</button>
-      <nav>
-        <ul>
-          <li><a href="splash.html">Splash</a></li>
-          <li><a href="home.html" class="active">Home</a></li>
-          <li><a href="volunteer.html">Volunteer</a></li>
-          <li><a href="table.html">Table</a></li>
-          <li><a href="profile.html">Profile</a></li>
-          <li><a href="feedback.html">Feedback</a></li>
-          <li><a href="sitemap.html">Sitemap</a></li>
-          <li><a href="team.html">Team</a></li>
-        </ul>
-      </nav>
-    </section>
-  </header>
-    
-    
-</div>
-</br>
-    
-        <div class="row gutters-sm">
-            <div class="col-md-4 mb-3">
-            <div class="card">
-                <div class="card-body"> 
-                        <img src="user.png" alt="Centered Image" class="rounded-circle" width="150" style="display: block; margin: auto;">
+    <header>
+        <section>
+          <div class="logo-title">
+            <img class="logo" src="images/home/zerohunger_logo.webp" alt="logo">
+            <h1 class="title">Zero Hunger</h1>
+          </div>
+          <button class="hamburger">☰</button>
+          <nav>
+            <ul>
+              <li><a href="splash.html">Splash</a></li>
+              <li><a href="home.html" class="active">Home</a></li>
+              <li><a href="volunteer.html">Volunteer</a></li>
+              <li><a href="table.html">Table</a></li>
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="feedback.html">Feedback</a></li>
+              <li><a href="sitemap.html">Sitemap</a></li>
+              <li><a href="team.html">Team</a></li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+     
+      <section>
+        <h2 aria-placeholder="centered">Visual Sitemap</h2>
+      </section>
 
-                        <div class="mt-3">
-                            <h4>Dil</h4>
-                            <div style="width: 100%; text-align: center;">
-                                 <p class="text-secondary" >undergraduate student</p>
-                            <p class="text-muted font-size-sm">Colombo sri lanka</p>
-                        </div>
-                            <button class="custom-file-button" class="centered" onclick="document.getElementById('fileInput').click();">
-                                Select an Image
-                            </button>
-                            
-                            <input type="file" id="fileInput" accept="image/*">
-                        
-                            <button id="image-button"></button>
-                        
-                            <script>
-                                const fileInput = document.getElementById('fileInput');
-                                const imageButton = document.getElementById('image-button');
-                        
-                                fileInput.addEventListener('change', function(event) {
-                                    const file = event.target.files[0];
-                                    if (file) {
-                                        const reader = new FileReader();
-                                        reader.onload = function(e) {
-                                            imageButton.style.backgroundImage = `url(${e.target.result})`;
-                                            imageButton.style.display = 'block'; // Show the button after selecting an image
-                                        };
-                                        reader.readAsDataURL(file);
-                                    }
-                                });
-                            </script>
-                        </div>
-                    </div>
-                </div>
-          
-        
-        
-    
-</br>
-
-<legend>
-
+    <!-- Card body with SVG Sitemap inside -->
     <div class="card">
         <div class="card-body">
-            <div class="align-items-center">
-                <ul class="list-group list-group-flush">
-                    <div class="row">
-                        <div class="col-sm-3">
-                          <h6 class="mb-0">Full Name</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                          
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <h6 class="mb-0">Email</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                          <a href="" class="__cf_email__" data-cfemail="0e68677e4e647b65637b66206f62"></a>
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <h6 class="mb-0">Phone</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                          
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <h6 class="mb-0">Mobile</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                          
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <h6 class="mb-0">Address</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                          colombo
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row">
-                        <div class="col-sm-12">
-                            <button class="btn btn-primary">
-                          <a class="btn btn-info " target="__blank" href="">Edit</a>
-                        </button>
-                        </div>
-                      </div>
-                </ul>
-            </div>
-                    
-                </div>
-            </div>
-        </div>
+            <svg viewBox="0 0 900 500" xmlns="" role="img" aria-labelledby="sitemapTitle">
+                <title id="sitemapTitle">Website Sitemap</title>
 
+                <a href="home.html" tabindex="0">
+                    <rect class="node" x="430" y="50" width="100" height="50" rx="20"></rect>
+                    <text x="480" y="80">Home</text>
+                </a>
+
+                <path d="M 480 100 C 480 120, 200 120, 200 150" stroke="black" fill="transparent" stroke-width="2"/>
+                <path d="M 480 100 C 480 120, 400 120, 400 150" stroke="black" fill="transparent" stroke-width="2"/>
+                <path d="M 480 100 C 480 120, 590 120, 590 150" stroke="black" fill="transparent" stroke-width="2"/>
+                <path d="M 480 100 C 480 120, 790 120, 790 150" stroke="black" fill="transparent" stroke-width="2"/>
+
+                <a href="splash.html" tabindex="0">
+                    <rect class="node" x="150" y="150" width="100" height="50" rx="20"></rect>
+                    <text x="200" y="180">Splash</text>
+                </a>
+
+                <a href="volunteer.html" tabindex="0">
+                    <rect class="node" x="350" y="150" width="100" height="50" rx="20"></rect>
+                    <text x="400" y="180">Volunteer</text>
+                </a>
+
+                <path d="M 400 200 C 400 220, 200 220, 200 250" stroke="black" fill="transparent" stroke-width="2"/>
+                <path d="M 400 200 C 400 220, 400 220, 400 250" stroke="black" fill="transparent" stroke-width="2"/>
+                <path d="M 590 200 C 590 220, 590 220, 590 250" stroke="black" fill="transparent" stroke-width="2"/>
+
+                <a href="team.html" tabindex="0">
+                    <rect class="node" x="150" y="250" width="100" height="50" rx="20"></rect>
+                    <text x="200" y="280">Team</text>
+                </a>
+
+                <a href="table.html" tabindex="0">
+                    <rect class="node" x="540" y="150"  width="100" height="50" rx="20"></rect>
+                    <text x="590" y="180">Table</text>
+                </a>
+
+                <a href="profile.html" tabindex="0">
+                    <rect class="node" x="740" y="150"  width="100" height="50" rx="20"></rect>
+                    <text x="790" y="180">Profile</text>
+                </a>
+
+                <a href="feedback.html" tabindex="0">
+                    <rect class="node" x="350" y="250"  width="100" height="50" rx="20"></rect>
+                    <text x="400" y="280">Feedback</text>
+                </a>
+
+                <a href="Sitemap.html" tabindex="0">
+                    <rect class="node" x="540" y="250"  width="100" height="50" rx="20"></rect>
+                    <text x="590" y="280">Sitemap</text>
+                </a>
+            </svg>
+        </div>
     </div>
 
-</legend>
-</div>
-</br>
-<div class="row gutters-sm">
-    <div class="col-sm-6 mb-3">
-      <div class="card h-100">
-        <div class="card-body">
-          <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">Skills </i>Status</h6>
-          <small>Web Design</small>
-          <div class="progress mb-3" style="height: 5px">
-            <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-          <small>Website Markup</small>
-          <div class="progress mb-3" style="height: 5px">
-            <div class="progress-bar bg-primary" role="progressbar" style="width: 72%" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-          <small>One Page</small>
-          <div class="progress mb-3" style="height: 5px">
-            <div class="progress-bar bg-primary" role="progressbar" style="width: 89%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-          <small>Mobile Template</small>
-          <div class="progress mb-3" style="height: 5px">
-            <div class="progress-bar bg-primary" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-          <small>Backend API</small>
-          <div class="progress mb-3" style="height: 5px">
-            <div class="progress-bar bg-primary" role="progressbar" style="width: 66%" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-                    
-                </div>
+    <footer>
+        <img height="75px" width="auto" src="images/home/zerohunger_logo.webp" alt="Zero Hunger Logo">
+        <p>&copy; Zero Hunger Group 10.</p>
+    
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Content Pages</h3>
+                <a href="pageEditor_ST1.html">Student 1 Page Editor</a>
+                <a href="pageEditor_ST2.html">Student 2 Page Editor</a>
+                <a href="pageEditor_ST3.html">Student 3 Page Editor</a>
+                <a href="pageEditor_ST4.html">Student 4 Page Editor</a>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Validation Pages</h3>
+                <a href="validation_ST1.html">Student 1 Page Validation</a>
+                <a href="validation_ST2.html">Student 2 Page Validation</a>
+                <a href="validation_ST3.html">Student 3 Page Validation</a>
+                <a href="validation_ST4.html">Student 4 Page Validation</a>
             </div>
         </div>
-
-    </div>
-</div>
-</br>
-
-
-<footer class="footer">
-    <div class="container">
-        <p>&copy; 2025 zero Hunger.All rights deserved</p>
-        <p>Contact Us: <a href="mailto:info@zerohunger.com">info@zerohunger.com</a></p>
-        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
-    </div>
-
-</footer>
-
+    </footer>
 </body>
-   
-       
-
-          
+</html>
