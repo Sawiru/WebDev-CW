@@ -11,7 +11,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(90deg, #D1F0B1, #87BAAB);
+  background: linear-gradient(135deg, #D1F0B1, #87BAAB);
   padding: 10px 20px;
   color: black;
   position: relative;
@@ -60,8 +60,8 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active{
-  border-bottom: 2px solid #FFA725;
-  color: #FFA725;
+  border-bottom: 2px solid #F3A712;
+  color: #F3A712;
   transform: scale(1.1);
 
 
@@ -85,7 +85,7 @@ nav ul li a.active{
       top: 90px;
       right: 0;
       width: 25%;
-      background-color: #6A9C89;
+      background: linear-gradient(135deg, #D1F0B1, #87BAAB);
       text-align: center;
       padding: 10px 0;
   }
@@ -120,7 +120,7 @@ main {
       
 .top a {
   padding: 10px 20px; /* Adds padding for button-like feel */
-  background-color: #007bff; /* Button color */
+  background: linear-gradient(135deg, #F3A712, #b8831a);
   color: white; /* Text color */
   text-decoration: none; /* Removes underline */
   border-radius: 20px; /* Rounds the corners */
@@ -129,7 +129,7 @@ main {
 }
 
 .top a:hover {
-  background-color: #0056b3; /* Darker shade on hover */
+   /* Darker shade on hover */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
 }
 
@@ -137,7 +137,7 @@ main {
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #8E7C6C;
+  background: linear-gradient(135deg, #D1F0B1, #87BAAB);
   color: black;
   margin-top: 20px;
   border-radius: 20px 20px 0px 0px; 

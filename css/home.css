@@ -2,7 +2,7 @@
   display: flex;
   align-items: center; /* Align text and image vertically */
   justify-content: space-between; /* Ensures space between text and image */
-  background-color: white;
+  background: linear-gradient(90deg, #caafce, #ffffff);
   padding: 20px; /* Add some spacing */
   border-radius: 20px;
 }
@@ -38,7 +38,7 @@ p{
     margin-top: 40px;
     margin-bottom: 40px;
     padding: 10px;
-    background-color: white;
+    background: linear-gradient(90deg, #caafce, #ffffff);
     border-radius: 20px;
 }
 
@@ -133,7 +133,7 @@ p{
     font-size: 18px;
     font-weight: bold;
     color: white;
-    background-color: #6A9C89; /* Green color */
+    background: linear-gradient(135deg, #F3A712, #b8831a);
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -143,7 +143,7 @@ p{
 }
 
 .btn-get-involved:hover {
-    background-color: #FFA725;
+    background: linear-gradient(135deg, #F3A712, #b8831a);
     transform: scale(1.05);
 }
 
