@@ -125,6 +125,7 @@ footer {
   background-color: #8E7C6C;
   color: black;
   margin-top: 20px;
+  border-radius: 20px 20px 0px 0px; 
 }
 
 .footer-container {
@@ -153,4 +154,25 @@ footer {
 
 .footer-section a:hover {
   text-decoration: underline;
+}
+
+.top {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+}
+      
+.top a {
+  padding: 10px 20px; /* Adds padding for button-like feel */
+  background-color: #007bff; /* Button color */
+  color: white; /* Text color */
+  text-decoration: none; /* Removes underline */
+  border-radius: 20px; /* Rounds the corners */
+  font-size: 12px; /* Adjust font size */
+  font-weight: bold; /* Make the text stand out */
+}
+
+.top a:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
 }

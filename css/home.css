@@ -58,11 +58,60 @@ p{
     text-align: center;
     padding: 10px;
     transition: transform 0.3s;
-    border-radius: 20px 20px 20px 20px; 
+    border-radius: 20px 20px 20px 20px;
+ 
+  
+ 
   }
   
+  #c1{
+    background-image: url("../images/home/c1.1.jpg");
+    background-size: cover; /* Ensures the image fills the tile */
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .75;
+    
+   
+
+  }
+
+  #c2{
+    background-image: url("../images/home/c2.jpg");
+    background-size: cover; /* Ensures the image fills the tile */
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .75;
+    
+
+  }
+
+  #c3{
+    background-image: url("../images/home/c3.webp");
+    background-size: cover; /* Ensures the image fills the tile */
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .75;
+
+  }
+  
+  #c4{
+    background-image: url("../images/home/c4.webp");
+    background-size: cover; /* Ensures the image fills the tile */
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .75;
+
+  }
+
   .content-tiles .tile:hover {
     transform: scale(1.05);
+  }
+
+  .content{
+    color: black;
+    text-decoration: none;
+    opacity: 1;
+    
   }
 
   .btn-get-involved {
@@ -85,6 +134,8 @@ p{
     background-color: #FFA725 ;
     transform: scale(1.05);
 }
+
+
 
 
 
