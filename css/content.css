@@ -1,0 +1,100 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF5E4;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 80vh; 
+    text-align: center;
+}
+
+.main-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #090909;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.start {
+    text-align: center;
+    font-size: 26px;
+}
+
+.start img {
+    width: 700px;
+    border-radius: 30px;
+}
+
+.content {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    background: #FFF5E4;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.internal-links {
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+}
+
+.internal-links li {
+    margin: 15px;
+}
+
+.internal-links a {
+    text-decoration: none;
+    color: #ff6b00;
+    font-weight: 700;
+    font-size: large;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 18px;
+    margin: 10px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 26px; 
+}
+
+.back-to-top {
+    display: block;
+    text-align: center;
+    margin: 40px ;
+    font-weight: bold;
+    color: #ff6b00;
+    text-decoration: none;
+}
+
+h5 {
+     text-align: center;
+     font-size: medium;
+}
+
+
+@media (max-width: 768px) {
+    
+    .content {
+        padding: 10px;
+    }
+}
