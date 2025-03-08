@@ -1,0 +1,21 @@
+svg {
+    width: 100%;
+    height: auto;
+}
+.node {
+    fill: #4caf7f;
+    stroke: #000;
+    cursor: pointer;
+    transition: fill 0.3s;
+}
+.node:hover, .node:focus {
+    fill: #FF9800;
+}
+text {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-anchor: middle;
+}
+body{
+    background-color: #e6d2f6;
+}
