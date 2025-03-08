@@ -4,19 +4,28 @@ body{
     text-align: left;
     background-color: #e2e8f0;    
 }
-container{
-    background-image: linear-gradient(rgb(0,0,0,0)50%);
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #C1D8C3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Ensures header, main, and footer are stacked */
+    min-height: 100vh; /* Makes body take up full viewport height */
 }
-section{
-    margin: 0%;
+
+
+
+header {
+    width: 100%;
+    background: #6A9C89; /* Consistent theme color */
+    color: white;
+    padding: 15px 0;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: xx-large;
-    background-color: rgb(163, 163, 205);
-    padding: 15px; 
-
-
 }
+
 
 .main-body {
     padding: 15px;
@@ -113,4 +122,12 @@ h4{
 }
 .shadow-none {
     box-shadow: none!important;
+}
+
+footer {
+    width: 100%;
+    background: #6A9C89;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
 }

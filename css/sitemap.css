@@ -1,4 +1,19 @@
-
+body {
+    font-family: Arial, sans-serif;
+    background-color: #C1D8C3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Ensures header, main, and footer are stacked */
+    min-height: 100vh; /* Makes body take up full viewport height */
+}
+header {
+    width: 100%;
+    background: #999c60; /* Consistent theme color */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
 svg {
     width: 100%;
     height: auto;
@@ -17,6 +32,10 @@ text {
     font-size: 18px;
     text-anchor: middle;
 }
-body{
-    background-color: #e6d2f6;
+footer {
+    width: 100%;
+    background: #6A9C89;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
 }

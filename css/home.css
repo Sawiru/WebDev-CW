@@ -2,13 +2,14 @@
   display: flex;
   align-items: center; /* Align text and image vertically */
   justify-content: space-between; /* Ensures space between text and image */
-  background-color: white;
+  background: linear-gradient(90deg, #caafce, #ffffff);
   padding: 20px; /* Add some spacing */
+  border-radius: 20px;
 }
 
 /* Style for text section */
 #opening_text {
-  font-size: 90px; 
+  font-size: 70px; 
   font-weight: bold;
   max-width: 40%;
 }
@@ -22,7 +23,6 @@
   margin-left: auto;
 }
 
-
 #vid{
   margin-top: 40px;
   text-align: center;
@@ -30,98 +30,110 @@
 
 p{
     font-weight: bold;
-  }
+}
 
-  /* Hero Section */
-  .para {
+/* Hero Section */
+.para {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
     padding: 10px;
-    background-color: white;
-    border-radius: 20px 20px 20px 20px;
+    background: linear-gradient(90deg, #caafce, #ffffff);
+    border-radius: 20px;
+}
 
-  }
-  
-  /* Content Tiles */
-  .content-tiles {
+/* Content Tiles */
+.content-tiles {
     display: flex;
     height: 400px;
     gap: 5px;
-    
-  }
-  
-  .content-tiles .tile {
+}
+
+.content-tiles .tile {
     flex: 1 1 calc(25% - 20px);
-    background-color: #fff;
-    border: 1px solid #ddd;
+
+    border-radius: 20px;
+    position: relative;
+
+}
+
+/* Make entire tile clickable */
+.content-tiles .tile a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+/* Add a dark overlay to the images */
+.content-tiles .tile::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    border-radius: 20px;
+}
+
+/* Style for the text inside the tiles */
+.content-tiles .tile h2 {
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
     text-align: center;
-    padding: 10px;
-    transition: transform 0.3s;
-    border-radius: 20px 20px 20px 20px;
- 
-  
- 
-  }
-  
-  #c1{
+}
+
+.content-tiles .tile:hover h2 {
+    font-size: 24px;    
+}
+
+.content-tiles .tile:hover {
+  transform: scale(1.05);
+}
+
+
+
+#c1 {
     background-image: url("../images/home/c1.1.jpg");
     background-size: cover; /* Ensures the image fills the tile */
     background-position: center;
     background-repeat: no-repeat;
-    opacity: .75;
-    
-   
+}
 
-  }
-
-  #c2{
+#c2 {
     background-image: url("../images/home/c2.jpg");
-    background-size: cover; /* Ensures the image fills the tile */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: .75;
-    
+}
 
-  }
-
-  #c3{
+#c3 {
     background-image: url("../images/home/c3.webp");
-    background-size: cover; /* Ensures the image fills the tile */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: .75;
+}
 
-  }
-  
-  #c4{
-    background-image: url("../images/home/c4.webp");
-    background-size: cover; /* Ensures the image fills the tile */
+#c4 {
+    background-image: url("../images/home/c4.jpg");
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: .75;
+}
 
-  }
-
-  .content-tiles .tile:hover {
-    transform: scale(1.05);
-  }
-
-  .content{
-    color: black;
-    text-decoration: none;
-    opacity: 1;
-    
-  }
-
-  .btn-get-involved {
+.btn-get-involved {
     display: block;
     width: 200px;
     padding: 12px;
     font-size: 18px;
     font-weight: bold;
     color: white;
-    background-color: #6A9C89; /* Green color */
+    background: linear-gradient(135deg, #F3A712, #b8831a);
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -131,12 +143,9 @@ p{
 }
 
 .btn-get-involved:hover {
-    background-color: #FFA725 ;
+    background: linear-gradient(135deg, #F3A712, #b8831a);
     transform: scale(1.05);
 }
-
-
-
 
 
   
