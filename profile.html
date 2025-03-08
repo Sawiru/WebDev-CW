@@ -1,28 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User profile</title>
-    <link href="styletcs.css">
-    
-
+    <title>user profile</title>
+    <link rel="stylesheet" href="profile.css">
 </head>
 <body>
-    <div class="container light-style flex-grow-1 container-p-y">
-        <h3 class="font-weight-bold py-3 mb-4 ">
-            Account settings
-        </h3>
-        <div class="card overflow-hidden">
-            <div class="col-md-3 pt-0">
-                <div class=""
-            
+    
+    <div class="container">
+    <section>
+        Zero Hunger
+    </section>
+</div>
+</br>
+    
+        <div class="row gutters-sm">
+            <div class="col-md-4 mb-3">
+            <div class="card">
+                <div class="card-body"> 
+                        <img src="user.png" alt="Centered Image" class="rounded-circle" width="150" style="display: block; margin: auto;">
+
+                        <div class="mt-3">
+                            <h4>Dil</h4>
+                            <div style="width: 100%; text-align: center;">
+                                 <p class="text-secondary" >undergraduate student</p>
+                            <p class="text-muted font-size-sm">Colombo sri lanka</p>
+                        </div>
+                            <button class="custom-file-button" class="centered" onclick="document.getElementById('fileInput').click();">
+                                Select an Image
+                            </button>
+                            
+                            <input type="file" id="fileInput" accept="image/*">
+                        
+                            <button id="image-button"></button>
+                        
+                            <script>
+                                const fileInput = document.getElementById('fileInput');
+                                const imageButton = document.getElementById('image-button');
+                        
+                                fileInput.addEventListener('change', function(event) {
+                                    const file = event.target.files[0];
+                                    if (file) {
+                                        const reader = new FileReader();
+                                        reader.onload = function(e) {
+                                            imageButton.style.backgroundImage = `url(${e.target.result})`;
+                                            imageButton.style.display = 'block'; // Show the button after selecting an image
+                                        };
+                                        reader.readAsDataURL(file);
+                                    }
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+          
+        
+        
+    
+</br>
+
+<legend>
+
+    <div class="card">
+        <div class="card-body">
+            <div class="align-items-center">
+                <ul class="list-group list-group-flush">
+                    <div class="row">
+                        <div class="col-sm-3">
+                          <h6 class="mb-0">Full Name</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                          
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <h6 class="mb-0">Email</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                          <a href="" class="__cf_email__" data-cfemail="0e68677e4e647b65637b66206f62"></a>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <h6 class="mb-0">Phone</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                          
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <h6 class="mb-0">Mobile</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                          
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <h6 class="mb-0">Address</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                          colombo
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="row">
+                        <div class="col-sm-12">
+                            <button class="btn btn-primary">
+                          <a class="btn btn-info " target="__blank" href="">Edit</a>
+                        </button>
+                        </div>
+                      </div>
+                </ul>
+            </div>
+                    
+                </div>
             </div>
         </div>
 
+    </div>
 
-           
-    
-    
+</legend>
+</div>
+</br>
+<div class="row gutters-sm">
+    <div class="col-sm-6 mb-3">
+      <div class="card h-100">
+        <div class="card-body">
+          <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">Skills </i>Status</h6>
+          <small>Web Design</small>
+          <div class="progress mb-3" style="height: 5px">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <small>Website Markup</small>
+          <div class="progress mb-3" style="height: 5px">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 72%" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <small>One Page</small>
+          <div class="progress mb-3" style="height: 5px">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 89%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <small>Mobile Template</small>
+          <div class="progress mb-3" style="height: 5px">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <small>Backend API</small>
+          <div class="progress mb-3" style="height: 5px">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 66%" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</br>
+
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2025 zero Hunger.All rights deserved</p>
+        <p>Contact Us: <a href="mailto:info@zerohunger.com">info@zerohunger.com</a></p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+
+</footer>
+
 </body>
-</html>
+   
+       
+
+          
