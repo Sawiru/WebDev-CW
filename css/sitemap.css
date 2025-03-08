@@ -1,10 +1,11 @@
+
 svg {
     width: 100%;
     height: auto;
 }
 .node {
-    fill: #4caf7f;
-    stroke: #000;
+    fill: #51ba88;
+    stroke: #f04b4b;
     cursor: pointer;
     transition: fill 0.3s;
 }
