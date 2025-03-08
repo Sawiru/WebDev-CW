@@ -29,116 +29,54 @@
       </nav>
     </section>
   </header>
-
+  
   <main>
+  <div class="card">
+    <h2>Profile</h2>
+    <div class="card-body">
+      
+      <section class="profile-card">
+        <img src="profile.png" alt="User Avatar" class="profile-avatar">
+        <h2 class="user-name">Dil</h2>
+        <ul>
+          <li>Age-21</li>
+          <li>Work</li>
+          <li>Family</li>
+          <li>Location</li>
+        </ul>
+    </section>
     
-    <div class="row gutters-sm">
-      <div class="col-md-4 mb-3">
-        <div class="card">
-          <div class="card-body">
-            <!-- Profile Picture Section -->
-            <img src="user.png" alt="Profile Picture" class="rounded-circle" id="profile-picture" width="150" style="display: block; margin: auto;">
-          
-            <div class="mt-3">
-              <h4 id="full-name">Dil</h4>
-              <p class="text-secondary">Undergraduate Student</p>
-              <p class="text-muted font-size-sm">Colombo, Sri Lanka</p>
+  </div>
+</div>
+  
+  <div class="card">
 
-              <button class="custom-file-button" onclick="document.getElementById('fileInput').click();">
-                Select an Image
-              </button>
-              <input type="file" id="fileInput" accept="image/*" style="display:none;">
-            </div>
-          </div>
-        </div>
+  <section class="profile-info">
+    <h2>Introduction</h2>
+    <p>Hello! I'm John Doe, a passionate web developer who loves creating beautiful and functional websites.</p>
+    
+  </div>
+
+  <div class="card">
+    <div class="skills">
+      <p>html</p>
+      <div class="skill-bar">
+          <div class="skill-level" style="width: 90%;"></div>
       </div>
-
-      <div class="col-md-8">
-        <div class="card">
-          <div class="card-body">
-            <h6 class="mb-3">User Details</h6>
-            <ul class="list-group list-group-flush">
-              <div class="row">
-                <div class="col-sm-3">
-                  <h6 class="mb-0">Full Name</h6>
-                </div>
-                <div class="col-sm-9 text-secondary" id="user-name">
-                  Dil
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="col-sm-3">
-                  <h6 class="mb-0">Email</h6>
-                </div>
-                <div class="col-sm-9 text-secondary" id="user-email">
-                  dil@example.com
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="col-sm-3">
-                  <h6 class="mb-0">Phone</h6>
-                </div>
-                <div class="col-sm-9 text-secondary" id="user-phone">
-                  +94 123 456 789
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="col-sm-3">
-                  <h6 class="mb-0">Address</h6>
-                </div>
-                <div class="col-sm-9 text-secondary" id="user-address">
-                  Colombo, Sri Lanka
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="col-sm-12">
-                  <button class="btn btn-primary">
-                    <a class="btn btn-info" href="edit-profile.html" target="__blank">Edit</a>
-                  </button>
-                </div>
-              </div>
-            </ul>
-          </div>
-        </div>
+      <p>CSS</p>
+      <div class="skill-bar">
+          <div class="skill-level" style="width: 80%;"></div>
       </div>
-    </div>
-
-    <!-- Skills Section -->
-    <div class="row gutters-sm">
-      <div class="col-sm-6 mb-3">
-        <div class="card h-100">
-          <div class="card-body">
-            <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">Skills</i>Status</h6>
-            <small>Web Design</small>
-            <div class="progress mb-3" style="height: 5px">
-              <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <small>Website Markup</small>
-            <div class="progress mb-3" style="height: 5px">
-              <div class="progress-bar bg-primary" role="progressbar" style="width: 72%" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <small>One Page</small>
-            <div class="progress mb-3" style="height: 5px">
-              <div class="progress-bar bg-primary" role="progressbar" style="width: 89%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <small>Mobile Template</small>
-            <div class="progress mb-3" style="height: 5px">
-              <div class="progress-bar bg-primary" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <small>Backend API</small>
-            <div class="progress mb-3" style="height: 5px">
-              <div class="progress-bar bg-primary" role="progressbar" style="width: 66%" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
+      <p>JavaScript</p>
+      <div class="skill-bar">
+          <div class="skill-level" style="width: 70%;"></div>
       </div>
-    </div>
-  </main>
+  </div>
+  </div>
+  
+  
 
+</main>
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
