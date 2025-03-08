@@ -6,53 +6,161 @@ body{
 }
 
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #C1D8C3;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column; /* Ensures header, main, and footer are stacked */
-    min-height: 100vh; /* Makes body take up full viewport height */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-
-
-header {
-    width: 100%;
-    background: #6A9C89; /* Consistent theme color */
-    color: white;
-    padding: 15px 0;
+.profile-card {
     text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-name {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.user-title {
+    font-size: 18px;
+    color: #777;
+}
+
+.profile-info {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-info h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.skills p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.skill-bar {
+    background-color: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.skill-level {
+    height: 20px;
+    background-color: #4caf50;
+}
+
+.volunteering, .interests, .availability, .contact-me {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.volunteering h2, .interests h2, .availability h2, .contact-me h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.volunteering ul, .interests ul {
+    list-style: none;
+    padding: 0;
+}
+
+.volunteering li, .interests li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.volunteering img, .interests img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+.contact-me form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-me label {
+    margin-bottom: 5px;
+}
+
+.contact-me input, .contact-me textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-me button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-me button:hover {
+    background-color: #555;
 }
 
 
 .main-body {
     padding: 15px;
 }
-.card {
-    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+
     
-}
-
+    
 .card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #c99191;
-    background-clip: border-box;
-    border: 0 solid rgba(0,0,0,.125);
-    border-radius: .25rem;
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #edddc3;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
+/* Card body styling */
 .card-body {
-    flex: 1 1 auto;
-    min-height: 1px;
-    padding: 1rem;
-    
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #FFF5E4;
+    border-radius: 8px;
 }
 
 #fileInput {
@@ -69,9 +177,15 @@ header {
     border-radius: 5px;
     font-size: 16px;
 }
-h4{
+h2{
     text-align: center;
-    text-decoration: solid;
+    position: relative;
+
+h3{
+    text-align: center;
+position: relative;
+}
+
     
 }
 
