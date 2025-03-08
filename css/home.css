@@ -4,6 +4,7 @@
   justify-content: space-between; /* Ensures space between text and image */
   background-color: white;
   padding: 20px; /* Add some spacing */
+  border-radius: 20px;
 }
 
 /* Style for text section */
@@ -50,37 +51,27 @@ p{
 
 .content-tiles .tile {
     flex: 1 1 calc(25% - 20px);
-    background-color: #fff;
-    border: 1px solid #ddd;
-    text-align: center;
-    padding: 10px;
-    transition: transform 0.3s;
+
     border-radius: 20px;
     position: relative;
-    overflow: hidden;
+
 }
 
 /* Make entire tile clickable */
 .content-tiles .tile a {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    text-decoration: none;
-    z-index: 3;
+
 }
 
 /* Add a dark overlay to the images */
 .content-tiles .tile::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* Dark overlay */
-    z-index: 1;
     border-radius: 20px;
 }
 
@@ -94,20 +85,18 @@ p{
     color: white;
     font-size: 22px;
     font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Improve contrast */
-    z-index: 2;
     text-align: center;
 }
 
-/* Hover effect for more emphasis */
-.content-tiles .tile:hover::before {
-    background: rgba(0, 0, 0, 0.7);
+.content-tiles .tile:hover h2 {
+    font-size: 24px;    
 }
 
-.content-tiles .tile:hover h2 {
-    font-size: 24px;
-    transform: translate(-50%, -50%) scale(1.05);
+.content-tiles .tile:hover {
+  transform: scale(1.05);
 }
+
+
 
 #c1 {
     background-image: url("../images/home/c1.1.jpg");
@@ -135,16 +124,6 @@ p{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.content-tiles .tile:hover {
-    transform: scale(1.05);
-}
-
-.content {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
 }
 
 .btn-get-involved {
