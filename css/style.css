@@ -143,6 +143,11 @@ footer {
   border-radius: 20px 20px 0px 0px; 
 }
 
+.foot_logo{
+  height: 75px;
+  width: auto;
+}
+
 .footer-container {
   display: flex;
   justify-content: space-around;
@@ -164,6 +169,9 @@ footer {
   text-decoration: none;
   color: black;
   margin: 3px 0;
+}
+
+.foot_text{
 }
 
 .footer-section a:hover {
