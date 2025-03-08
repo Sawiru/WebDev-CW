@@ -122,17 +122,9 @@ main {
     color: #666;
 }
 
-/* Footer Styling */
-footer {
-    width: 100%;
-    background: #6A9C89;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-}
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .feedback-form {
         width: 95%; /* Adjust form width for smaller screens */
         padding: 20px;
