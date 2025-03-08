@@ -9,14 +9,6 @@ body {
     min-height: 100vh; /* Makes body take up full viewport height */
 }
 
-/* Header Styling */
-header {
-    width: 100%;
-    background: #6A9C89; /* Consistent theme color */
-    color: white;
-    padding: 15px 0;
-    text-align: center;
-}
 
 /* Main Content */
 main {
@@ -122,14 +114,6 @@ main {
     color: #666;
 }
 
-/* Footer Styling */
-footer {
-    width: 100%;
-    background: #6A9C89;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
