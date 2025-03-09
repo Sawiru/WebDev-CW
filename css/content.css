@@ -33,6 +33,7 @@ body {
     border-radius: 30px;
 }
 
+
 .content {
     padding: 20px;
     max-width: 1000px;
@@ -54,10 +55,17 @@ body {
 
 .internal-links a {
     text-decoration: none;
-    color: #ff6b00;
+    color: #FFA725;
     font-weight: 700;
     font-size: large;
+    
 }
+
+.link{
+    background: linear-gradient(90deg, #b391b7, #8f5b96);
+    border-radius: 20px;
+}
+
 
 p {
     line-height: 1.6;
