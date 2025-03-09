@@ -177,7 +177,16 @@ table th {
     border-radius: 5px;
     font-size: 10px;
 }
+.btn-primary{
+    background-color: #007bff;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 10px;
 
+}
 h2{
     text-align: center;
     position: relative;
