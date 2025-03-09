@@ -56,6 +56,10 @@ body {
     transition: 0.3s;
 }
 
+.card button:hover {
+    background-color: #8e5706;
+}
+
 .ratings {
     text-align: center;
     color: #fed074;
@@ -66,10 +70,6 @@ body {
     color: #f5e4cb;
     font-size: 18px;
     margin: 5px;
-}
-
-.card button:hover {
-    background-color: #e68900;
 }
 
 .dropdown { 
