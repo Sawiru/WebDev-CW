@@ -16,11 +16,12 @@
 
 
 #opening_image {
-  width: 65%; 
-  max-width: 900px; 
-  height: auto;
-  border-radius: 20px;
-  margin-left: auto;
+    width: 65%; 
+    max-width: 900px; 
+    height: auto;
+    border-radius: 20px;
+    margin-left: auto;
+
 }
 
 #vid{
