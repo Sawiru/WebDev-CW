@@ -11,6 +11,12 @@
       }
   });
 
+  
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("Message Sent Successfully!");
+  });
+
   window.onload = function() {
     const username = localStorage.getItem("username");
     const email = localStorage.getItem("email");
