@@ -1,30 +1,26 @@
 
-    // Handle the image selection
-    document.getElementById('fileInput').addEventListener('change', function(event) {
+document.addEventListener("DOMContentLoaded", function () {
+  const fileInput = document.getElementById("fileInput");
+  const profileAvatar = document.querySelector(".profile-avatar");
+
+  fileInput.addEventListener("change", function (event) {
       const file = event.target.files[0];
+
       if (file) {
           const reader = new FileReader();
-          reader.onload = function(e) {
-              document.getElementById('profileImage').src = e.target.result;
+
+          reader.onload = function (e) {
+              profileAvatar.src = e.target.result;
+              localStorage.setItem("profileImage", e.target.result); // Save to local storage
           };
+
           reader.readAsDataURL(file);
       }
   });
 
-  
-  document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-    alert("Message Sent Successfully!");
-  });
-
-  window.onload = function() {
-    const username = localStorage.getItem("username");
-    const email = localStorage.getItem("email");
-
-    if (username) {
-        document.getElementById("userName").innerText = username;
-    }
-    if (email) {
-        document.getElementById("userEmail").innerText = email;
-    }
-};
+  // Load saved image from local storage (if any)
+  const savedImage = localStorage.getItem("profileImage");
+  if (savedImage) {
+      profileAvatar.src = savedImage;
+  }
+});
