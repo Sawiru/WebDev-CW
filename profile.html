@@ -4,7 +4,7 @@
     <title>user profile</title>
     <link rel="stylesheet" href="css/profile.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+   
 </head>
 <script src="JS/home.js"></script>
 <script src="JS/profile.js"></script>
@@ -30,21 +30,38 @@
   </header>
   
   <main>
-  <div class="card">
-    <h2>Profile</h2>
-    <div class="card-body">
-      
-      <section class="profile-card">
-         
-        <div class="profile-container">
+    <div class="card">
+      <h2>Profile</h2>
+      <div class="profile-card">
+          <img id="profileAvatar" src="images/profile/profile.png" alt="Profile Picture" class="profile-avatar">
 
-          <div class="profile-card">
-              <img id="profileAvatar" src="images/profile/profile.png" alt="Profile Picture" class="profile-avatar">
-              <input type="file" id="profileUpload" accept="image/*">
-          </div>
+          <h2>Kasun Rathnayaka</h2>
+          <ul>
+            <li><strong>Colombo,Srilanka</strong></li>
+            <li><strong>Software Engineer</strong></li>
+            <li><strong>21 years old</strong></li>
+
+          </ul>
+          
+          <!-- Upload button -->
+          <label for="profileUpload" class="upload-btn">Upload</label>
+          <input type="file" id="profileUpload" accept="image/*" hidden>
       </div>
-      
-      
+  </div>
+</main>
+
+<script>
+  document.getElementById('profileUpload').addEventListener('change', function(event) {
+      const file = event.target.files[0];
+      if (file) {
+          const reader = new FileReader();
+          reader.onload = function(e) {
+              document.getElementById('profileAvatar').src = e.target.result;
+          }
+          reader.readAsDataURL(file);
+      }
+  });
+</script>
     
   </div>
 </div>
@@ -54,7 +71,7 @@
 
   <section class="profile-info">
     <h2>Introduction</h2>
-    <p>Hello! .</p>
+    <p>Kasun Rathnayaka is a passionate software engineer and dedicated volunteer, actively working towards the Zero Hunger initiative. I love solving problems, building innovative solutions, and making a positive impact on communities in need</p>
     
   </div>
 </aside>
@@ -116,6 +133,7 @@
   </section> 
   <section class="availability">
       <h2>Availability</h2>
+    
       <table>
           <tr>
               <th>Day</th>
@@ -129,11 +147,26 @@
               <td>Tuesday</td>
               <td>9 AM - 5 PM</td>
           </tr>
+          <tr>
+            <td>
+              wednesday
+            </td>
+            <td>
+              4 PM - 10 PM
+            </td>
+          </tr>
       </table>
     </br>
       <button class="btn btn-primary">
         <a class="btn btn-info" href="pageEditor_ST4.html" target="__blank">Edit</a>
   </section>
+  </div>
+
+  <div class="card">
+    <section class="un-goal">
+
+      <h2><strong>UN goals I support</strong></h2>
+    </section>
   </div>
   <div class="card">
     <section class="contact-me">
