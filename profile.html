@@ -35,23 +35,16 @@
     <div class="card-body">
       
       <section class="profile-card">
+         
+        <div class="profile-container">
 
-        <img src="images/profile/profile.png" alt="profile" class="profile-avatar">
-        <h3>Name: <span id="userName">Loading...</span></h3>
-
-
-        <ul>
-          <li>Age-21</li>
-          <li>Work</li>
-          <li>Family</li>
-          <li>Location</li>
-        </ul>
-
-        <button class="custom-file-button"  onclick="document.getElementById('fileInput').click();">
-          Select
-        </button>
-        <input type="file" id="fileInput" accept="image/*" style="display:none;">
-    </section>
+          <div class="profile-card">
+              <img id="profileAvatar" src="images/profile/profile.png" alt="Profile Picture" class="profile-avatar">
+              <input type="file" id="profileUpload" accept="image/*">
+          </div>
+      </div>
+      
+      
     
   </div>
 </div>
@@ -116,9 +109,9 @@
   <section class="interests">
       <h2>Interests</h2>
       <ul>
-          <li><img src="images/profile/target.png" alt="Coding"> Coding</li>
-          <li><img src="icon4.png" alt="Travel"> Travel</li>
-          <li><img src="icon5.png" alt="Reading"> Reading</li>
+          <li><img src="images/profile/target.png" alt="Coding"><strong>Coding</strong> </li>
+          <li><img src="images/profile/team.png" alt="Travel"> <Strong>Traveling</Strong></li>
+          <li><img src="images/profile/experience.png" alt="reading"> <strong>Reading</strong></li>
       </ul>
   </section> 
   <section class="availability">
