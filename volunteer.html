@@ -74,6 +74,7 @@
 
     <div class="ratings">
         <h2>9.4/10</h2>
+        <p>Exceptional</p>
         <p>64 Reviews</p>
     </div>
 
@@ -115,15 +116,22 @@
         </div>
     
 
-        <div class="feedback-form">
+        <form class="feedback-form">
             <h2>Send us your review</h2>
+            <div class="feedback-emoji">
+                <span class="emoji-btn">😊</span>
+                <span class="emoji-btn">🙂</span>
+                <span class="emoji-btn">😐</span>
+                <span class="emoji-btn">🙁</span>
+                <span class="emoji-btn">😞</span>
+            </div>
             <textarea id="feedback-textarea" placeholder="Write your review here...."></textarea>
             <div class="feedback-buttons">
-                <button id="submit-btn" class="btn" style="background: #e68900">Send Feedback</button>
-                <button id="cancel-btn" class="btn" style="background: grey;">Cancel</button>
+                <button class="submit-btn">Send Feedback</button>
+                <button type="reset" class="cancel-btn">Cancel</button>
             </div>
-            <p id="submission-message" style="display: none; color: green; margin-top: 10px;">Submitted!</p>
-        </div>
+        </form>
+
         
         <footer>
             <img class="foot_logo" src="images/home/zerohunger_logo.webp">
