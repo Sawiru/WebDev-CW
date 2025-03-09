@@ -4,30 +4,29 @@
     <title>user profile</title>
     <link rel="stylesheet" href="css/profile.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <script src="JS/home.js"></script>
 <script src="JS/profile.js"></script>
 <body>
   <header>
-    <section>
-      <div class="logo-title">
+    <div class="logo-title">
         <img class="logo" src="images/home/zerohunger_logo.webp" alt="logo">
         <h1 class="title">Zero Hunger</h1>
-      </div>
-      <button class="hamburger">☰</button>
-      <nav>
+    </div>
+    <button class="hamburger">☰</button>
+    <nav>
         <ul>
-          <li><a href="splash.html">Splash</a></li>
-          <li><a href="home.html" class="active">Home</a></li>
-          <li><a href="volunteer.html">Volunteer</a></li>
-          <li><a href="table.html">Table</a></li>
-          <li><a href="profile.html">Profile</a></li>
-          <li><a href="feedback.html">Feedback</a></li>
-          <li><a href="sitemap.html">Sitemap</a></li>
-          <li><a href="team.html">Team</a></li>
+        <li><a href="splash.html">Splash</a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="table.html">Table</a></li>
+        <li><a href="profile.html" class="active">Profile</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+        <li><a href="team.html">Team</a></li>
         </ul>
-      </nav>
-    </section>
+    </nav>
   </header>
   
   <main>
@@ -36,55 +35,161 @@
     <div class="card-body">
       
       <section class="profile-card">
-        <img src="profile.png" alt="User Avatar" class="profile-avatar">
-        <h2 class="user-name">Dil</h2>
+
+        <img src="images/profile/profile.png" alt="profile" class="profile-avatar">
+        <h3>Name: <span id="userName">Loading...</span></h3>
+
+
         <ul>
           <li>Age-21</li>
           <li>Work</li>
           <li>Family</li>
           <li>Location</li>
         </ul>
+
+        <button class="custom-file-button"  onclick="document.getElementById('fileInput').click();">
+          Select
+        </button>
+        <input type="file" id="fileInput" accept="image/*" style="display:none;">
     </section>
     
   </div>
 </div>
+<aside>
   
   <div class="card">
 
   <section class="profile-info">
     <h2>Introduction</h2>
-    <p>Hello! I'm John Doe, a passionate web developer who loves creating beautiful and functional websites.</p>
+    <p>Hello! .</p>
     
   </div>
+</aside>
 
   <div class="card">
     <div class="skills">
-      <p>html</p>
+      <h2>Skills</h2>
+      <p>h</p>
       <div class="skill-bar">
           <div class="skill-level" style="width: 90%;"></div>
       </div>
-      <p>CSS</p>
+      <p>C</p>
       <div class="skill-bar">
           <div class="skill-level" style="width: 80%;"></div>
       </div>
-      <p>JavaScript</p>
+      <p>J</p>
       <div class="skill-bar">
           <div class="skill-level" style="width: 70%;"></div>
       </div>
   </div>
   </div>
-  
-  
 
+  <div class="card">
+    <h2>Goals </h2>
+    <ul>
+        <li>Goals: </li>
+        
+    </ul>
+  </div>
+  <div class="card">
+    <h2>frustrations </h2>
+    <ul>
+        <li>frustrations </li>
+        
+    </ul>
+
+    <section class="volunteering">
+      <h2>Volunteering Activities</h2>
+      <ul>
+          <li><img src="images/volunteer/food1.jpg" alt="Community Work"> Community Food Banks:
+            Provide food supplies to low-income families.</li>
+          <li><img src="images/volunteer/food2.jpg" alt="Teaching"> School Meal Programs:
+            Ensure children receive daily nutritious meals.</li>
+      </ul>
+  </section>
+
+  </div>
+  <div class="card">
+  </section>
+  <section class="interests">
+      <h2>Interests</h2>
+      <ul>
+          <li><img src="images/profile/target.png" alt="Coding"> Coding</li>
+          <li><img src="icon4.png" alt="Travel"> Travel</li>
+          <li><img src="icon5.png" alt="Reading"> Reading</li>
+      </ul>
+  </section> 
+  <section class="availability">
+      <h2>Availability</h2>
+      <table>
+          <tr>
+              <th>Day</th>
+              <th>Time</th>
+          </tr>
+          <tr>
+              <td>Monday</td>
+              <td>9 AM - 5 PM</td>
+          </tr>
+          <tr>
+              <td>Tuesday</td>
+              <td>9 AM - 5 PM</td>
+          </tr>
+      </table>
+    </br>
+      <button class="btn btn-primary">
+        <a class="btn btn-info" href="edit-profile.html" target="__blank">Edit</a>
+  </section>
+  </div>
+  <div class="card">
+    <section class="contact-me">
+      <h2>Contact Me</h2>
+      <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea>
+          <button type="submit">Send</button>
+      </form>
+  </section>
+  </div>
+  
 </main>
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Zero Hunger. All rights reserved.</p>
-      <p>Contact Us: <a href="mailto:info@zerohunger.com">info@zerohunger.com</a></p>
-      <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
-    </div>
-  </footer>
+<footer>
+  <img class="foot_logo" src="images/home/zerohunger_logo.webp">
+  <p>&copy; Zero Hunger Group 10. All rights reserved.</p>
+
+  <div class="footer-container">
+      <div class="footer-section">
+          <h3>Content Pages</h3>
+          <a href="content_ST1.html">Content Page 1</a>
+          <a href="content_ST2.html">Content Page 2</a>
+          <a href="content_ST3.html">Content Page 3</a>
+          <a href="content_ST4.html">Content Page 4</a>
+      </div>
+
+      <div class="footer-section">
+          <h3>Page Editor</h3>
+          <a href="pageEditor_ST1.html">Student 1 Page Editor</a>
+          <a href="pageEditor_ST2.html">Student 2 Page Editor</a>
+          <a href="pageEditor_ST3.html">Student 3 Page Editor</a>
+          <a href="pageEditor_ST4.html">Student 4 Page Editor</a>
+      </div>
+
+      <div class="footer-section">
+          <h3>Validation Pages</h3>
+          <a href="validation_ST1.html">Student 1 Page Validation</a>
+          <a href="validation_ST2.html">Student 2 Page Validation</a>
+          <a href="validation_ST3.html">Student 3 Page Validation</a>
+          <a href="validation_ST4.html">Student 4 Page Validation</a>
+      </div>
+  </div>
+</footer>    
+</div>
+</body>
+</html>
+
 
   
 </body>
