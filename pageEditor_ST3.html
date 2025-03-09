@@ -7,8 +7,9 @@
         <link rel="stylesheet" href="css/pageEditor_validator.css">
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+        <script src="JS/home.js"></script>
     </head>
-    <script src="JS/home.js"></script>
+    
     <body>
         <header>
             <div class="logo-title">
@@ -30,29 +31,141 @@
             </nav>
         </header>
         <section class="stud">
-            <h2>Praveen Dulshan Wijesundara, Student3</h2>
+            <h2>Praveen Dulshan Wijesundara, Student 03</h2>
         </section>
         <div class="container">
             <main>
                 <section>
-                    <h2 id="content">Feedback Page</h2>
+                    <h2 id="feedback">Feedback Page</h2>
+                
                     <h3>Technical Description</h3>
-                    <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the key tags and styling choices focusing on functionality and design without copying large code sections.</p>
+                    <p>
+                        The Feedback Page allows users to share their experiences and suggestions. It is built using HTML and CSS, ensuring a clean and structured layout. 
+                        The page follows a structured <code>div</code> container model with a dedicated <code>header</code>, <code>main</code>, and <code>footer</code> section for logical content flow.
+                    </p>
+                    <p>
+                        The feedback form includes text inputs, radio buttons, dropdowns, and a textarea. CSS is used for consistent styling, while JavaScript provides validation to ensure required fields are filled. 
+                        The form prevents incorrect submissions by checking email format and required inputs, improving user interaction and data accuracy.
+                    </p>
+                
                     <h3>Accessibility</h3>
-                    <p>Explain how you addressed accessibility in this page.</p>
+                    <p>
+                        The Feedback Page is designed with accessibility in mind. Labels are linked to form fields for screen reader compatibility, and alternative text (<code>alt</code>) is provided for images.
+                        The page maintains proper contrast ratios between text and background for readability. All form elements support keyboard navigation, allowing users to tab through inputs and buttons efficiently.
+                    </p>
+                    <p>
+                        Font sizes are defined using relative units (<code>rem</code> and <code>em</code>) to support text resizing. Error messages provide clear guidance for users with disabilities.
+                    </p>
+                
                     <h3>Link to the validation page</h3>
-                    <p><a href="validation_ST3.html">Include a link to the validation page</a></p>
+                    <a href="validation_ST3.html#feedbackVal">Validation for Feedback Page</a>
+                
                     <h3>Link to the page</h3>
-                    <p><a href="content.html">Include a link to the actual page you describe.</a></p>
+                    <p><a href="feedback.html">Feedback Page</a></p>
                 </section>
+                
                 <section>
-                    <h2 id="challenge">Challenges and Lessons Learned</h2>
-                    <p>Detail challenges encountered and how they were resolved. Reflect on lessons learned.</p>
+                    <h2 id="team">Team Page</h2>
+                
+                    <h3>Technical Description</h3>
+                    <p>
+                        The Team Page introduces the project team members, showcasing their roles and contributions. The page structure follows a container-based model, ensuring a clean and organized layout using HTML and CSS.
+                        The main content is wrapped in a <code>div</code> with class <code>"team-rectangle"</code> for styling and structure.
+                    </p>
+                    <p>
+                        The page features a grid-based layout with <code>div</code> elements representing individual team members. Each member is displayed with an image, name, role, and a list of implemented pages.
+                        Hover effects reveal additional details about each member using CSS transitions. Flexbox and grid are used to ensure a responsive design, making the layout adaptable to various screen sizes.
+                    </p>
+                
+                    <h3>Accessibility</h3>
+                    <p>
+                        The Team Page is designed with accessibility in mind. Images have alternative text (<code>alt</code>) to support screen readers, and proper color contrast is maintained for readability.
+                        The hover-based information display is complemented by structured HTML, ensuring that users relying on assistive technologies can access the content effectively.
+                    </p>
+                    <p>
+                        Font sizes are set using relative units (<code>rem</code> and <code>em</code>) to support text resizing. The layout remains user-friendly across different devices, ensuring ease of interaction.
+                    </p>
+                
+                    <h3>Link to the validation page</h3>
+                    <a href="validation_ST3.html#teamVal">Validation for Team Page</a>
+                
+                    <h3>Link to the page</h3>
+                    <p><a href="team.html">Team Page</a></p>
                 </section>
+
                 <section>
-                    <h2 id="compliance">Compliance</h2>
-                    <p>Discuss how the pages comply with web regulations.</p>
+                    <h2 id="content3">Content Page</h2>
+                
+                    <h3>Technical Description</h3>
+                    <p>
+                        The Content Page 3 focuses on "The Role of Individuals and Communities in Fighting Hunger." It follows a structured layout with sections for different aspects of combating hunger.
+                        The content is wrapped in a <code>div</code> with class <code>"content"</code> for styling and readability.
+                    </p>
+                    <p>
+                        The page is designed with a hierarchical structure using <code>h1</code> and <code>h2</code> tags to improve readability and SEO. Internal navigation links help users jump to different sections easily.
+                        CSS employs <code>flexbox</code> and <code>grid</code> to ensure a responsive design, allowing for seamless adjustments across different screen sizes.
+                    </p>
+                
+                    <h3>Accessibility</h3>
+                    <p>
+                        The page is optimized for accessibility by including <code>alt</code> attributes for all images, ensuring screen reader compatibility. Text content is structured with proper heading levels for better navigation.
+                    </p>
+                    <p>
+                        The navigation menu and internal links provide a user-friendly browsing experience, allowing visitors to access relevant information quickly. Font sizes are set using relative units (<code>rem</code> and <code>em</code>) to support scalability.
+                    </p>
+                
+                    <h3>Link to the validation page</h3>
+                    <a href="validation_ST3.html#contentVal">Validation for Content Page 3</a>
+                
+                    <h3>Link to the page</h3>
+                    <p><a href="content_ST3.html#contentVal">Content Page 3</a></p>
+                </section>          
+             
+                <section>
+                    <h2 id="challenges&Les">Challenges and Lessons Learned</h2>
+                
+                    <h3>Challenges</h3>
+                    <p>
+                        During the development process, one of the main challenges encountered was maintaining consistency across all web pages. Since different team members worked on various sections, ensuring uniformity in design, navigation, and styling was critical. A global CSS file was shared among all team members to maintain consistency. Additionally, ensuring the accessibility of interactive elements, such as buttons and icons, presented challenges. For example, some custom buttons were not fully accessible to screen readers, requiring us to make adjustments.
+                    </p>
+                    <p>
+                        Another challenge was fine-tuning the navigation, particularly the dropdown menus and button controls. We also needed to ensure that dynamic JavaScript interactions, like expandable reviews, functioned well without negatively affecting usability or accessibility when the content changed.
+                    </p>
+                
+                    <h3>Lessons Learned</h3>
+                    <p>
+                        From these challenges, we learned the importance of collaboration and organized file management, especially when working with a team. Clear communication and frequent code sharing were crucial to keep the project on track. One major lesson was the importance of testing early and often to identify issues across various devices and browsers before they became blockers. While embracing modern design trends, we had to ensure that accessibility and compatibility were not compromised, especially for users with disabilities or those using different devices.
+                    </p>
+                    <p>
+                        We also reinforced the significance of writing clean and structured code. Troubleshooting validation errors and maintaining compliance with HTML and CSS standards enhanced our attention to detail and improved the quality of the website.
+                    </p>
                 </section>
+                
+                <section>
+                    <h2 id="compliance">Compliance with Janet Regulations</h2>
+                
+                    <h3>Compliance Overview</h3>
+                    <p>
+                        The pages we created comply with Janet’s regulations governing web page publication. This includes adherence to accessibility standards, HTML/CSS validation, and best practices for user experience.
+                    </p>
+                
+                    <h3>Accessibility Compliance</h3>
+                    <p>
+                        We ensured that the pages are accessible to users with disabilities by including <code>alt</code> attributes for all images and optimizing interactive elements for keyboard navigation. Proper heading hierarchy was used to improve navigation for screen readers, and color contrast was considered for readability.
+                    </p>
+                    
+                    <h3>HTML/CSS Standards</h3>
+                    <p>
+                        All pages were validated for proper HTML and CSS structure, ensuring that there are no errors or issues that would affect functionality or display. Compliance with these standards helps improve cross-browser compatibility and overall page performance.
+                    </p>
+                
+                    <h3>User Experience</h3>
+                    <p>
+                        The site was designed with a focus on user experience, ensuring that the navigation is intuitive, and all content is easily accessible. The use of relative font sizes (<code>rem</code> and <code>em</code>) helps users scale the page for better readability on various devices.
+                    </p>
+                
+                </section>
+                
                 <section>
                     <h2 id="ref">References</h2>
                     <ul class="ref">
@@ -64,13 +177,42 @@
             <aside>
                 <h3>Core pages developed:</h3>
                 <ul class="top-level-ul">
-                    <li>Student Name</li>
+                    <li>Student 1</li>
                         <ul> 
-                            <li><a href="#content">Content page</a></li>
+                            <li><a href="pageEditor_ST1.html#splash">Splash page</a></li>
+                            <li><a href="pageEditor_ST1.html#volunteer">Volunteer page</a></li>
+                            <li><a href="pageEditor_ST1.html#content">Content page</a></li>
                         </ul>
-                    <li><a href="#challenge">Challenges and Lessons Learned</a></li>
-                    <li><a href="#compliance">Compliance</a></li>
-                    <li><a href="#ref">References</a></li>
+                    <li>Student 2</li>
+                        <ul>
+                            <li><a href="home.html">Home page </a></li>
+                            <li><a href="table.html">Table page</a></li>
+                            <li><a href="content_ST2.html">Content page</a></li>
+
+                            <li><a href="pageEditor_ST2.html#challenge">Challenges and Lessons Learned</a></li>
+                            <li><a href="pageEditor_ST2.html#compliance">Compliance</a></li>
+                            <li><a href="pageEditor_ST2.html#ref">References</a></li>
+                        </ul>
+
+                    <li>Student 3</li>
+                        <ul>
+                            <li><a href="feedback.html">Feedback page</a></li>
+                            <li><a href="team.html">Team page</a></li>
+                            <li><a href="content_ST3.html">Content page</a></li>
+                        
+                            <li><a href="#challenges&Les">Challenges and Lessons Learned</a></li>
+                            <li><a href="#compliance">Compliance</a></li>
+                            <li><a href="#ref">References</a></li>
+                        </ul>   
+                <li>Student 4</li>
+                        <ul>
+                            <li><a href="profile.html">User Profile page</a></li>
+                            <li><a href="Sitemap.html">Visual sitemap page</a></li>
+                            <li><a href="content_ST4.html">Content page 4</a></li>
+                            <li><a href="pageEditor_ST4.html#challenge">Challenges and Lessons Learned</a></li>
+                            <li><a href="pageEditor_ST4.html#compliance">Compliance</a></li>
+                            <li><a href="pageEditor_ST4.html#ref">References</a></li>
+                        </ul>
                 </ul>
             </aside>
         </div>
