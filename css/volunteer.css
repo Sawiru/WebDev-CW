@@ -65,6 +65,7 @@ body {
 .ratings p {
     color: #f5e4cb;
     font-size: 18px;
+    margin: 5px;
 }
 
 .card button:hover {
@@ -73,6 +74,8 @@ body {
 
 .dropdown { 
     margin: 10px 0;
+    border-radius: 8px;
+
 }
 
 .reviews {
@@ -91,26 +94,6 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     display: inline-block;
     
-}
-
-.feedback-form h2 {
-    color: white;
-}
-
-.feedback-form textarea {
-    width: 50%;
-    height: 150px;
-    padding: 10px;
-    margin: auto;
-    text-align: center;
-    border-radius: 8px;
-}
-
-.feedback-form button {
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
 }
 
 .review-content {
@@ -139,10 +122,55 @@ body {
     text-decoration: underline;
 }
 
-.submit-btn { background-color: #ff5722; color: white; }
+.feedback-form h2 {
+    color: white;
+}
 
-.submit-btn:hover { background-color: #e64a19; }
+.feedback-form textarea {
+    width: 50%;
+    height: 150px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    border-radius: 8px;
+}
 
-.cancel-btn { background-color: grey; color: white; }
+.feedback-form button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
 
-.cancel-btn:hover { background-color: darkgrey; }
+.submit-btn {
+    background-color: #e68900;
+}
+
+.cancel-btn {
+    background-color: grey;
+}
+
+.submit-btn:hover { 
+    background-color: #a16100; 
+}
+
+.cancel-btn:hover { 
+    background-color: darkgrey; 
+}
+
+.feedback-emoji {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.emoji-btn {
+    font-size: 2rem;
+    cursor: pointer; 
+    transition: transform 0.3s, filter 0.3s; 
+}
+
+.emoji-btn:hover {
+    transform: scale(1.2); /* Slightly enlarge the button on hover */
+    filter: brightness(1.2); /* Increase brightness to make it look interactive */
+}
