@@ -15,10 +15,11 @@ body {
 
 
 .team-container {
-    background: #6A9C89 ;
+    background: linear-gradient(90deg, #caafce, #ffffff);
     color: white;
     padding: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px 20px 20px 20px; 
 }
 .team-text{
     color:black
@@ -45,7 +46,7 @@ body {
 .member {
     width: 200px;
     text-align: center;
-    background: #C1D8C3;
+    background: #002066;
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease;
@@ -63,12 +64,12 @@ body {
 }
 
 .info {
-    background: #8bca91;
+    background: #F3A712;
     color: black;
     padding: 10px;
     margin-top: 10px;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.411);
     opacity: 0; 
     transition: opacity 0.3s ease;
 }

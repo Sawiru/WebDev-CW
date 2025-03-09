@@ -1,9 +1,21 @@
-/* General Styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #C1D8C3;
+/* CSS Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styling */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure full height */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
     display: flex;
     flex-direction: column; /* Ensures header, main, and footer are stacked */
     min-height: 100vh; /* Makes body take up full viewport height */
@@ -16,6 +28,7 @@ header {
     color: white;
     padding: 15px 0;
     text-align: center;
+    margin: 0; /* Ensure no margin */
 }
 
 /* Main Content */
@@ -25,29 +38,32 @@ main {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    margin: 0; /* Ensure no margin */
 }
 
 /* Feedback Form Styling */
 .feedback-form {
     width: 60%;
-    background: #FFF5E4;
+    background: #caafce;
     padding: 30px;
-    box-shadow: 0 0 10px #3f3f3f;
+    box-shadow: 0 0 10px #000000;
     border-radius: 10px;
+    margin: 0 auto; /* Center the form and remove extra space */
 }
 
 .feedback-form h1 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 26px;
-    color: #333;
+    color: #000000;
+    margin-top: 0; /* Ensure no extra space above the heading */
 }
 
 .feedback-form label {
     display: block;
     margin-bottom: 6px;
     font-weight: bold;
-    color: #555;
+    color: #000000;
 }
 
 .feedback-form input[type="text"],
@@ -121,7 +137,6 @@ main {
     font-size: 0.9em;
     color: #666;
 }
-
 
 /* Responsive Design */
 @media (max-width: 900px) {
