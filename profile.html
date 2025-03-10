@@ -6,28 +6,29 @@
     <link rel="stylesheet" href="css/style.css">
    
 </head>
-<script src="JS/home.js"></script>
-<script src="JS/profile.js"></script>
+
 <body>
-  <header>
-    <div class="logo-title">
-        <img class="logo" src="images/home/zerohunger_logo.webp" alt="Zero Hunger Logo">
-        <h1 class="title">Zero Hunger</h1>
-    </div>
-    <button class="hamburger">☰</button>
-    <nav>
-        <ul>
-            <li><a href="splash.html">Splash</a></li>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="volunteer.html">Volunteer</a></li>
-            <li><a href="table.html">Table</a></li>
-            <li><a href="profile.html" class="active">Profile</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-            <li><a href="sitemap.html">Sitemap</a></li>
-            <li><a href="team.html">Team</a></li>
-        </ul>
-    </nav>
-</header>
+  
+    <div class="wrapper">
+        <header>
+            <div class="logo-title">
+                <img class="logo" src="images/home/zerohunger_logo.webp" alt="logo">
+                <h1 class="title">Zero Hunger</h1>
+            </div>
+            <button class="hamburger">☰</button>
+            <nav>
+                <ul>
+                <li><a href="home.html" >Home</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="profile.html" class="active">Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+                </ul>
+            </nav>
+        </header>
+
 <div class="card">
   <h1>Profile</h1>
  
@@ -37,16 +38,15 @@
     <div class="aside-col">
         <h2>Jhon Wick</h2>
         <img src="images/profile/profile.png" alt="User's profile picture">
-        <p>"Together, we can feed the world. Join the movement today."
-        </p>
+        <p>"Together, we can feed the world. Join the movement today."</p>
         <p>Age - <b>21</b></p>
         <p>Work - <b>Undergraduate Student</b></p>
         <p>Location - <b>Westminster</b></p>
-<section>
+      <div class="upload-btn">
         <label for="fileInput" class="select-btn">Select Photo</label>
         <input type="file" id="fileInput" accept="image/*">
-      </section>
-    </br>
+    </div>
+    
 
         <!-- Skills bar -->
         <div class="skills">
@@ -83,7 +83,7 @@
        
         <div class="section2">
             <h3 class="sub-head">Introduction</h3>
-            Jhon Wick is a undergraduate student in university of westminster.also he is a dedicated volunteer, working towards the Zero Hunger initiative. He enjoys solving problems, building innovative solutions, and making a positive impact on communities in need</p>
+            <p>Jhon Wick is a undergraduate student in university of westminster.also he is a dedicated volunteer, working towards the Zero Hunger initiative. He enjoys solving problems, building innovative solutions, and making a positive impact on communities in need</p>
         </div>
 
         
@@ -133,66 +133,53 @@
 
             
                <form>
-                <label for="name">Name:</label>
+                <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name"><br>
-                <label for="email">Email:</label>
+                <label for="email">Email:</label><br>
                 <input type="email" id="email" name="email"><br>
-                <label for="message">Message:</label>
+                <label for="message">Message:</label><br>
                 <textarea id="message" name="message"></textarea><br>
-                <button type="submit">Send</button>
+                <button type="submit">Send</button><br>
             </form>
             </div>
         </div>
-
-         
-           
-        
-          
-            
-          
-          
         </section>
-         
-        </div>
-    </div>
-      
-        </div>
+        
     </div>
   </div>
 </div>
+
 <footer>
-  <img class="foot_logo" src="images/home/zerohunger_logo.webp">
-  <p>&copy; Zero Hunger Group 10. All rights reserved.</p>
+    <img class="foot_logo" src="images/home/zerohunger_logo.webp" alt="foot_logo">
+    <p>&copy; Zero Hunger Group 10. All rights reserved.</p>
 
-  <div class="footer-container">
-      <div class="footer-section">
-          <h3>Content Pages</h3>
-          <a href="content_ST1.html">Content Page 1</a>
-          <a href="content_ST2.html">Content Page 2</a>
-          <a href="content_ST3.html">Content Page 3</a>
-          <a href="content_ST4.html">Content Page 4</a>
-      </div>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Content Pages</h3>
+            <a href="content_ST1.html">Content Page 1</a>
+            <a href="content_ST2.html">Content Page 2</a>
+            <a href="content_ST3.html">Content Page 3</a>
+            <a href="content_ST4.html">Content Page 4</a>
+        </div>
 
-      <div class="footer-section">
-          <h3>Page Editor</h3>
-          <a href="pageEditor_ST1.html">Student 1 Page Editor</a>
-          <a href="pageEditor_ST2.html">Student 2 Page Editor</a>
-          <a href="pageEditor_ST3.html">Student 3 Page Editor</a>
-          <a href="pageEditor_ST4.html">Student 4 Page Editor</a>
-      </div>
+        <div class="footer-section">
+            <h3>Page Editor</h3>
+            <a href="pageEditor_ST1.html">Student 1 Page Editor</a>
+            <a href="pageEditor_ST2.html">Student 2 Page Editor</a>
+            <a href="pageEditor_ST3.html">Student 3 Page Editor</a>
+            <a href="pageEditor_ST4.html">Student 4 Page Editor</a>
+        </div>
 
-      <div class="footer-section">
-          <h3>Validation Pages</h3>
-          <a href="validation_ST1.html">Student 1 Page Validation</a>
-          <a href="validation_ST2.html">Student 2 Page Validation</a>
-          <a href="validation_ST3.html">Student 3 Page Validation</a>
-          <a href="validation_ST4.html">Student 4 Page Validation</a>
-      </div>
-  </div>
+        <div class="footer-section">
+            <h3>Validation Pages</h3>
+            <a href="validation_ST1.html">Student 1 Page Validation</a>
+            <a href="validation_ST2.html">Student 2 Page Validation</a>
+            <a href="validation_ST3.html">Student 3 Page Validation</a>
+            <a href="validation_ST4.html">Student 4 Page Validation</a>
+        </div>
+    </div>
 </footer>    
-
+</div>
+<script src="JS/home.js"></script>
 </body>
 </html>
-
-
-  
