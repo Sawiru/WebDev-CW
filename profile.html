@@ -29,6 +29,7 @@
     </nav>
 </header>
 <div class="card">
+  <h1>Profile</h1>
  
   <div class="prof-sec">
         
@@ -36,11 +37,17 @@
     <div class="aside-col">
         <h2>Jhon Wick</h2>
         <img src="images/profile/profile.png" alt="User's profile picture">
-        <p>"No one should go to bed hungry when we have enough food to feed the world."</p>
+        <p>"Together, we can feed the world. Join the movement today."
+        </p>
         <p>Age - <b>21</b></p>
         <p>Work - <b>Undergraduate Student</b></p>
         <p>Location - <b>Westminster</b></p>
-        
+<section>
+        <label for="fileInput" class="select-btn">Select Photo</label>
+        <input type="file" id="fileInput" accept="image/*">
+      </section>
+    </br>
+
         <!-- Skills bar -->
         <div class="skills">
             <h3 class="sub-head">Skills</h3><br>
@@ -72,7 +79,7 @@
     </div>
 
     <!--  Bio, Goals, and Experience -->
-    <div class="center-column">
+    <div class="center-col">
        
         <div class="section2">
             <h3 class="sub-head">Introduction</h3>
@@ -118,21 +125,38 @@
                 </li>
              </ul>
         </div>     
+
+        <section>
+            <div class="card">
+            <h2>Contact Me</h2>
+            <div class="card-body">
+
+            
+               <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+            </div>
+        </div>
+
+         
+           
         
-        <div class="skills-card">
-          <div class=""></div>
-          <h2>Contact Me</h2>
-          <form>
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name">
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email">
-              <label for="message">Message:</label>
-              <textarea id="message" name="message"></textarea>
-              <button type="submit">Send</button>
-          </form>
-       
-      </div>
+          
+            
+          
+          
+        </section>
+         
+        </div>
+    </div>
+      
+        </div>
     </div>
   </div>
 </div>
