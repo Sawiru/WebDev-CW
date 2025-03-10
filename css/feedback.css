@@ -44,7 +44,7 @@ main {
 /* Feedback Form Styling */
 .feedback-form {
     width: 60%;
-    background: #caafce;
+    background: linear-gradient(90deg, #b391b7, #8f5b96);
     padding: 30px;
     box-shadow: 0 0 10px #000000;
     border-radius: 10px;
