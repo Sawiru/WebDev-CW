@@ -150,12 +150,12 @@ body {
     background-color: #e68900;
 }
 
-.cancel-btn {
-    background-color: grey;
-}
-
 .submit-btn:hover { 
     background-color: #a16100; 
+}
+
+.cancel-btn {
+    background-color: grey;
 }
 
 .cancel-btn:hover { 
