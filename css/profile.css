@@ -94,20 +94,6 @@ main {
     margin-right: 10px;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table th, table td {
-    border: 1px solid #000000;
-    padding: 8px;
-    text-align: left;
-}
-
-table th {
-    background-color: #f2f2f2;
-}
 
 .contact-me form {
     display: flex;
@@ -274,7 +260,7 @@ body {
  /* Styling for interest images */
  .aside-col {
     width: 25%;
-    background: linear-gradient(135deg, #3d418e, #1d1b1b);
+    background: linear-gradient(90deg, #190b71, #000000);
     color: rgb(255, 255, 255);
     padding: 20px;
     text-align: center;
@@ -285,7 +271,7 @@ body {
  
  /* Left column hover effect */
  .aside-col:hover {
-    background: #524e4e;
+    background: #af7a9e;
     color: #000000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
  }
@@ -294,10 +280,7 @@ body {
     text-align: left;
  }
  
- .aside-col h2:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
- }
+
  
  /* Styling for profile image */
  .aside-col img {
@@ -305,14 +288,13 @@ body {
     width: 100%;
     max-width: 250px;
     height: auto;
-    border: 5px solid #ffffff;
     border-radius: 50%;
     margin-bottom: 10px;
  }
  
  /* Profile image hover effect */
  .aside-col img:hover {
-    transform: scale(1.1);
+    transform: scale(0.7);
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5); 
  }
  
@@ -329,10 +311,7 @@ body {
     margin-bottom: 20px;
  }
  
- .skill-items:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
- }
+ 
  
  /* Skill bars container */
  .bar-container {
@@ -345,7 +324,7 @@ body {
  /* Skill bar styling */
  .bar {
     height: 100%;
-    background:#d67214;
+    background:#001d37;
     border-radius: 5px;
  }
  
