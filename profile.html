@@ -11,179 +11,131 @@
 <body>
   <header>
     <div class="logo-title">
-        <img class="logo" src="images/home/zerohunger_logo.webp" alt="logo">
+        <img class="logo" src="images/home/zerohunger_logo.webp" alt="Zero Hunger Logo">
         <h1 class="title">Zero Hunger</h1>
     </div>
     <button class="hamburger">☰</button>
     <nav>
         <ul>
-        <li><a href="splash.html">Splash</a></li>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="volunteer.html">Volunteer</a></li>
-        <li><a href="table.html">Table</a></li>
-        <li><a href="profile.html" class="active">Profile</a></li>
-        <li><a href="feedback.html">Feedback</a></li>
-        <li><a href="sitemap.html">Sitemap</a></li>
-        <li><a href="team.html">Team</a></li>
+            <li><a href="splash.html">Splash</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="profile.html" class="active">Profile</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+            <li><a href="team.html">Team</a></li>
         </ul>
     </nav>
-  </header>
-  
-  <main>
-    <div class="card">
-      <h2>Profile</h2>
-      <div class="profile-card">
-          <img id="profileAvatar" src="images/profile/profile.png" alt="Profile Picture" class="profile-avatar">
+</header>
+<div class="card">
+ 
+  <div class="prof-sec">
+        
+    <!-- aside  Column - User Infor -->
+    <div class="aside-col">
+        <h2>Jhon Wick</h2>
+        <img src="images/profile/profile.png" alt="User's profile picture">
+        <p>"No one should go to bed hungry when we have enough food to feed the world."</p>
+        <p>Age - <b>21</b></p>
+        <p>Work - <b>Undergraduate Student</b></p>
+        <p>Location - <b>Westminster</b></p>
+        
+        <!-- Skills bar -->
+        <div class="skills">
+            <h3 class="sub-head">Skills</h3><br>
+            <div class="skill-items">
+                <p>Well Communication</p>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50%;"></div> 
+                </div>
+            </div>
+            <div class="skill-items">
+                <p>Coding</p>
+                <div class="bar-container">
+                    <div class="bar" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill-items">
+                <p>Volunteering</p>
+                <div class="bar-container">
+                    <div class="bar" style="width: 60%;"></div> 
+                </div>
+            </div>
+            <div class="skill-items">
+                <p>Community Engagement</p>
+                <div class="bar-container">
+                    <div class="bar" style="width: 80%;"></div> 
+                </div>
+            </div>
+        </div>
+    </div>
 
-          <h2>Kasun Rathnayaka</h2>
-          <ul>
-            <li><strong>Colombo,Srilanka</strong></li>
-            <li><strong>Software Engineer</strong></li>
-            <li><strong>21 years old</strong></li>
+    <!--  Bio, Goals, and Experience -->
+    <div class="center-column">
+       
+        <div class="section2">
+            <h3 class="sub-head">Introduction</h3>
+            Jhon Wick is a undergraduate student in university of westminster.also he is a dedicated volunteer, working towards the Zero Hunger initiative. He enjoys solving problems, building innovative solutions, and making a positive impact on communities in need</p>
+        </div>
 
-          </ul>
-          
-          <!-- Upload button -->
-          <label for="profileUpload" class="upload-btn">Upload</label>
-          <input type="file" id="profileUpload" accept="image/*" hidden>
+        
+        <div class="section">
+            <h3 class="sub-head"><img src="images/profile/target.png" alt="Goals"> Goals</h3>
+            <ul>
+                <li>Provide food to 100 families per year</li>
+                <li>Raise $50,000 for Zero Hunger initiatives</li>
+                <li>Help local farmers adopt sustainable agriculture practices.</li>
+            </ul>
+        </div>
+
+        <!-- Experience-->
+        <div class="section">
+            <h3 class="sub-head"><img src="images/profile/experience.png" alt="Experience">Experience</h3>
+            <ul>
+                <li>volunteering about Donation Campaings</li>
+                <li> makes farming projects </li>
+                <li>Emergency Food Relief & Crisis Response</li>
+            </ul>
+        </div>
+
+        <!-- Interests Sec -->
+        <div class="section">
+            <h3 class="sub-head"><img src="images/profile/technologyicon.png" alt="Interests"> Interests</h3>                   
+            <br>    
+            <ul class="interests-list">
+                <li>
+                    <img src="images/profile/technologyicon.png" alt="Sustainable Farming">
+                    <p>Technology & Innovation in Food Distribution</p>
+                </li>
+                <li>
+                    <img src="images/profile/ethnic.png" alt="Healthy Eating">
+                    <p>Cultural & Global Perspectives on Hunger</p>
+                </li>
+                <li>
+                    <img src="images/profile/food-safety.png" alt="Climate Awareness">
+                    <p>Food Security & Sustainable Solutions</p>
+                </li>
+             </ul>
+        </div>     
+        
+        <div class="skills-card">
+          <div class=""></div>
+          <h2>Contact Me</h2>
+          <form>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message"></textarea>
+              <button type="submit">Send</button>
+          </form>
+       
       </div>
-  </div>
-</main>
-
-<script>
-  document.getElementById('profileUpload').addEventListener('change', function(event) {
-      const file = event.target.files[0];
-      if (file) {
-          const reader = new FileReader();
-          reader.onload = function(e) {
-              document.getElementById('profileAvatar').src = e.target.result;
-          }
-          reader.readAsDataURL(file);
-      }
-  });
-</script>
-    
+    </div>
   </div>
 </div>
-<aside>
-  
-  <div class="card">
-
-  <section class="profile-info">
-    <h2>Introduction</h2>
-    <p>Kasun Rathnayaka is a passionate software engineer and dedicated volunteer, actively working towards the Zero Hunger initiative. I love solving problems, building innovative solutions, and making a positive impact on communities in need</p>
-    
-  </div>
-</aside>
-
-  <div class="card">
-    <div class="skills">
-      <h2>Skills</h2>
-      <p>Problem Solving</p>
-      <div class="skill-bar">
-          <div class="skill-level" style="width: 90%;"></div>
-      </div>
-      <p>Team Work</p>
-      <div class="skill-bar">
-          <div class="skill-level" style="width: 80%;"></div>
-      </div>
-      <p>Well Communicative</p>
-      <div class="skill-bar">
-          <div class="skill-level" style="width: 70%;"></div>
-      </div>
-  </div>
-  </div>
-
-  <div class="card">
-    <h2>Goals </h2>
-    <ul>
-        <li>Provide food to 100 families per year</li>
-        <li>Raise $50,000 for Zero Hunger initiatives</li>
-        
-    </ul>
-  </div>
-  <div class="card">
-    <h2>frustrations </h2>
-    <ul>
-        <li>frustrations </li>
-        
-    </ul>
-
-    <section class="volunteering">
-      
-      <h2>Volunteering Activities</h2>
-      <ul>
-          <li> Community Food Banks:
-            food supplies to low-income families.</li>
-          <li>School Meal Programs:
-            Ensure children receive daily nutritious meals.</li>
-      </ul>
-  </section>
-
-  </div>
-  <div class="card">
-  </section>
-  <section class="interests">
-      <h2>Interests</h2>
-      <ul>
-          <li><img src="images/profile/target.png" alt="Coding"><strong>Coding</strong> </li>
-          <li><img src="images/profile/team.png" alt="Travel"> <Strong>Traveling</Strong></li>
-          <li><img src="images/profile/experience.png" alt="reading"> <strong>Reading</strong></li>
-      </ul>
-  </section> 
-  <section class="availability">
-      <h2>Availability</h2>
-    
-      <table>
-          <tr>
-              <th>Day</th>
-              <th>Time</th>
-          </tr>
-          <tr>
-              <td>Monday</td>
-              <td>9 AM - 5 PM</td>
-          </tr>
-          <tr>
-              <td>Tuesday</td>
-              <td>9 AM - 5 PM</td>
-          </tr>
-          <tr>
-            <td>
-              wednesday
-            </td>
-            <td>
-              4 PM - 10 PM
-            </td>
-          </tr>
-      </table>
-    </br>
-      <button class="btn btn-primary">
-        <a class="btn btn-info" href="pageEditor_ST4.html" target="__blank">Edit</a>
-  </section>
-  </div>
-
-  <div class="card">
-    <section class="un-goal">
-
-      <h2><strong>UN goals I support</strong></h2>
-    </section>
-  </div>
-  <div class="card">
-    <section class="contact-me">
-      <h2>Contact Me</h2>
-      <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email">
-          <label for="message">Message:</label>
-          <textarea id="message" name="message"></textarea>
-          <button type="submit" href="">Send</button>
-      </form>
-  </section>
-  </div>
-  
-</main>
 <footer>
   <img class="foot_logo" src="images/home/zerohunger_logo.webp">
   <p>&copy; Zero Hunger Group 10. All rights reserved.</p>
@@ -214,11 +166,9 @@
       </div>
   </div>
 </footer>    
-</div>
+
 </body>
 </html>
 
 
   
-</body>
-</html>

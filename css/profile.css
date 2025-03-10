@@ -113,18 +113,18 @@ table th {
 }
 
 .contact-me label {
-    margin-bottom: 5px;
+    margin-bottom: 30px;
 }
 
 .contact-me input, .contact-me textarea {
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 30px;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 .contact-me button {
-    padding: 10px;
+    padding: 30px;
     background-color: #333;
     color: white;
     border: none;
@@ -147,7 +147,7 @@ table th {
     width: 90%;
     max-width: 900px;
     margin: 40px auto;
-    background-color: #edddc3;
+    background: linear-gradient(90deg, #caafce, #ffffff);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -159,7 +159,7 @@ table th {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: #FFF5E4;
+    background-color: #f5dede;
     border-radius: 8px;
 }
 
@@ -247,3 +247,170 @@ footer {
     text-align: center;
     padding: 15px 0;
 }
+
+body {
+   
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+ }
+ 
+ /* Profile section styling  */
+ .prof-sec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px auto;
+    background: linear-gradient(90deg, #caafce, #ffffff);
+    max-width: 1900px;
+    overflow: hidden;
+ }
+ 
+ /* Styling for interest images */
+ .aside-col {
+    width: 25%;
+    background: linear-gradient(135deg, #3d418e, #1d1b1b);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+ }
+ 
+ /* Left column hover effect */
+ .aside-col:hover {
+    background: #524e4e;
+    color: #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .aside-col p {
+    text-align: left;
+ }
+ 
+ .aside-col h2:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+ }
+ 
+ /* Styling for profile image */
+ .aside-col img {
+    
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    margin-bottom: 10px;
+ }
+ 
+ /* Profile image hover effect */
+ .aside-col img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5); 
+ }
+ 
+ /* Skills section styling */
+ .skills {
+    
+    background-color: #b6c1f2;
+    padding: 20px;
+    border-radius: 5px;
+    color: #000000;
+ }
+ 
+ .skill-items {
+    margin-bottom: 20px;
+ }
+ 
+ .skill-items:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+ }
+ 
+ /* Skill bars container */
+ .bar-container {
+    background: #ddd;
+    height: 10px;
+    border-radius: 5px;
+    width: 100%;
+ }
+ 
+ /* Skill bar styling */
+ .bar {
+    height: 100%;
+    background:#d67214;
+    border-radius: 5px;
+ }
+ 
+ h3 img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+ }
+ 
+ /* Sub-heading styling for sections */
+ .sub-head {
+    
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin: 0;
+ }
+ 
+ 
+ .center-column {
+    
+    width: 45%;
+    padding: 20px;
+    box-sizing: border-box;
+ }
+ 
+ /* Styling for content sections */
+ .section, .section2 {
+   
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, color 0.3s ease;
+ 
+ }
+ 
+ .section {
+    background: #ffffff;
+ 
+ }
+ 
+ .section:hover {
+    background: linear-gradient(135deg, #67687c, #1d1b1b);
+    color: rgb(255, 255, 255);
+ }
+ 
+ .interests-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+ }
+ 
+ .interests-list li {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 20px; 
+ }
+ 
+ /* Styling for interest images */
+ .interests-list img {
+    width: 30px; 
+    height: 30px; 
+    margin-right: 10px;
+ }
+ 
+ .interests-list p {
+    margin: 0; 
+ }
+ 
